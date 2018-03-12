@@ -1,0 +1,10 @@
+package com.joy.modules.common.validator.group;
+
+/**
+ * 类QcloudGroup的功能描述:
+ * 腾讯云
+ * @auther joy
+ * @date 2017-08-25 16:15:44
+ */
+public interface QcloudGroup {
+}
