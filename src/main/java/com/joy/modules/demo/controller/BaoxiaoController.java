@@ -4,8 +4,9 @@ import com.joy.modules.common.page.Page;
 import com.joy.modules.common.utils.Result;
 import com.joy.modules.common.utils.StringUtils;
 import com.joy.modules.common.utils.Utils;
+import com.joy.modules.demo.entity.BaoxiaoEntity;
 import com.joy.modules.demo.entity.LeaveEntity;
-import com.joy.modules.demo.service.LeaveService;
+import com.joy.modules.demo.service.BaoxiaoService;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -18,30 +19,30 @@ import javax.servlet.http.HttpServletRequest;
 
 /**
  *
- * 业务树
+ * @author w24164
+ * @create 2018-03-12 16:20
  */
-@RequestMapping("demo/leave")
+@RequestMapping("demo/baoxiao")
 @Controller
-public class LeaveController {
-
+public class BaoxiaoController {
     @Autowired
-    LeaveService leaveService;
+    BaoxiaoService baoxiaoService;
 
     /**
      * 请假列表
      * @param model
-     * @param leaveEntity
+     * @param baoxiaoEntity
      * @param request
      * @return
      */
     @RequestMapping("list")
     @RequiresPermissions("act:model:all")
-    public String list(Model model , LeaveEntity leaveEntity, HttpServletRequest request){
+    public String list(Model model , BaoxiaoEntity baoxiaoEntity, HttpServletRequest request){
         int pageNum = Utils.parseInt(request.getParameter("pageNum"), 1);
-        Page<LeaveEntity> page = leaveService.findPage(leaveEntity, pageNum);
+        Page<LeaveEntity> page = baoxiaoService.findPage(baoxiaoEntity, pageNum);
         model.addAttribute("page",page);
-        model.addAttribute("leave",leaveEntity);
-        return "demo/leave";
+        model.addAttribute("leave",baoxiaoEntity);
+        return "demo/baoxiao";
     }
 
     /**
@@ -55,25 +56,25 @@ public class LeaveController {
     @RequiresPermissions("act:model:all")
     public String info(Model model , String id, HttpServletRequest request){
         if(!StringUtils.isEmpty(id)){
-            LeaveEntity leaveEntity = leaveService.queryObject(id);
-            model.addAttribute("leave",leaveEntity);
+            BaoxiaoEntity baoxiaoEntity = baoxiaoService.queryObject(id);
+            model.addAttribute("baoxiao",baoxiaoEntity);
         }
-        return "demo/leaveEdit";
+        return "demo/baoxiaoEdit";
     }
 
     /**
      * 编辑
-     * @param leaveEntity
+     * @param baoxiaoEntity
      * @return
      */
     @RequestMapping(value = "edit",method = RequestMethod.POST)
     @RequiresPermissions("act:model:all")
     @ResponseBody
-    public Result edit(LeaveEntity leaveEntity){
-        if(StringUtils.isEmpty(leaveEntity.getId())){
-            leaveService.save(leaveEntity);
+    public Result edit(BaoxiaoEntity baoxiaoEntity){
+        if(StringUtils.isEmpty(baoxiaoEntity.getId())){
+            baoxiaoService.save(baoxiaoEntity);
         }else {
-            leaveService.update(leaveEntity);
+            baoxiaoService.update(baoxiaoEntity);
         }
         return Result.ok();
     }
@@ -88,17 +89,9 @@ public class LeaveController {
     @RequiresPermissions("act:model:all")
     @ResponseBody
     public Result edit(String id){
-       if(leaveService.delete(id)<1){
-           return Result.error("删除请假条失败");
-       }
-        return Result.ok("删除请假条成功");
+        if(baoxiaoService.delete(id)<1){
+            return Result.error("删除报销单失败");
+        }
+        return Result.ok("删除报销单成功");
     }
-
-
-
-
-
-
-
-
 }

@@ -9,10 +9,7 @@ import java.util.Map;
 
 /**
  * 请假流程测试
- * 
- * @author joy
- * @email huangxianyuan@gmail.com
- * @date 2017-07-31 13:33:23
+ *
  */
 public interface LeaveService {
 	
