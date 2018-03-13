@@ -187,7 +187,7 @@ $.jgrid.regional["cn"] = {
                 YearMonth: "F, Y" // in jQuery UI Datepicker: "MMMM, yyyy"
             },
             reformatAfterEdit : false,
-			userLocalTime : false
+			userLocalTime : true
         },
         baseLinkUrl: '',
         showAction: '',

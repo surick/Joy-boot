@@ -1,10 +1,9 @@
 package com.joy.modules.common.entity;
 
 /**
- * 类的功能描述.
+ *
  * 动态表信息
- * @Auther joy
- * @Date 2017/8/10
+ *
  */
 public class TableInfo {
     public static final String TAB_FIELDS = "fields";

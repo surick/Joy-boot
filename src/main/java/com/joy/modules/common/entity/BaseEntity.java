@@ -1,13 +1,14 @@
 package com.joy.modules.common.entity;
 
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+
 import java.util.Date;
 import java.util.List;
 
 /**
- * 类的功能描述.
+ *
  * 对业务实体做公共属性
- * @Auther joy
- * @Date 2017/4/25
+ *
  */
 public class BaseEntity {
     /**

@@ -5,10 +5,7 @@ import java.io.Serializable;
 
 /**
  * 权限角色表
- * 
- * @author chenshun
- * @email huangxianyuan@gmail.com
- * @date 2017-05-03 10:07:59
+ *
  */
 public class RoleMenuEntity implements Serializable {
 	private static final long serialVersionUID = 1L;

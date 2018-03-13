@@ -10,7 +10,7 @@ $(function () {
                     '<span class="label label-danger">禁用</span>';
             }},
 			{ label: '备注', name: 'remark', width: 100 },
-			{ label: '创建时间', name: 'createTime', index: "create_time", width: 80,formatter:'date',formatoptions:{srcformat: 'Y-m-d H:i:s', newformat: 'Y-m-d H:i:s'}}
+			{ label: '创建时间', name: 'createTime', index: "create_time", width: 80,editable:false,formatter:"date",formatoptions: {srcformat:'u',newformat:'m-d H:i:s'}}
         ],
 		viewrecords: true,
         height: 385,

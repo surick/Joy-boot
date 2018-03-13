@@ -4,10 +4,9 @@ package com.joy.modules.common.entity;
 import java.util.Date;
 
 /**
- * 类的功能描述.
+ *
  * activiti公共属性 需要用到流程的业务，需要继承
- * @Auther joy
- * @Date 2017/4/25
+ *
  */
 public class ActivitiBaseEntity extends BaseEntity {
 

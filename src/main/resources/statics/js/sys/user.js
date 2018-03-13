@@ -14,7 +14,7 @@ $(function () {
 					'<span class="label label-success">正常</span>' :
 					'<span class="label label-danger">禁用</span>';
 			}},
-			{ label: '创建时间', name: 'createTime', index: "create_time", width: 80}
+			{ label: '创建时间', name: 'createTime', index: "create_time", width: 80,editable:false,formatter:"date",formatoptions: {srcformat:'u',newformat:'m-d H:i:s'}}
         ],
 		viewrecords: true,
         height: 385,

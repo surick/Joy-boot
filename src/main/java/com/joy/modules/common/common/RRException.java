@@ -1,10 +1,9 @@
 package com.joy.modules.common.common;
 
 /**
- * 类RRException的功能描述:
+ *
  * 自定义异常
- * @auther joy
- * @date 2017-08-25 16:15:36
+ *
  */
 public class RRException extends RuntimeException {
 	private static final long serialVersionUID = 1L;
