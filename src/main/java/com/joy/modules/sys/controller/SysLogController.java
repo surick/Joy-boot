@@ -17,10 +17,9 @@ import java.util.Map;
 
 
 /**
- * 类SysLogController的功能描述:
+ *
  * 系统日志
- * @auther joy
- * @date 2017-08-25 16:20:16
+ *
  */
 @Controller
 @RequestMapping("/sys/log")
