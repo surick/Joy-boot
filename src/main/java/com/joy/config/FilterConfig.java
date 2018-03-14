@@ -10,10 +10,9 @@ import org.springframework.web.filter.DelegatingFilterProxy;
 import javax.servlet.DispatcherType;
 
 /**
- * 类FilterConfig的功能描述:
+ *
  * Filter配置
- * @auther joy
- * @date 2017-11-15 21:50:48
+ *
  */
 @Configuration
 public class FilterConfig {

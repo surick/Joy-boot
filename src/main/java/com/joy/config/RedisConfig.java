@@ -9,10 +9,9 @@ import redis.clients.jedis.JedisPool;
 import redis.clients.jedis.JedisPoolConfig;
 
 /**
- * 类RedisConfig的功能描述:
+ *
  * Redis配置
- * @auther joy
- * @date 2017-11-15 21:49:31
+ *
  */
 @Configuration
 @EnableAutoConfiguration

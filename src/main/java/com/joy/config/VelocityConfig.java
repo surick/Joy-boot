@@ -9,10 +9,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * 类VelocityConfig的功能描述:
+ *
  * Velocity配置
- * @auther joy
- * @date 2017-11-13 17:03:49
+ *
  */
 @Configuration
 public class VelocityConfig {

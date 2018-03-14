@@ -9,10 +9,9 @@ import java.util.Properties;
 
 
 /**
- * 类KaptchaConfig的功能描述:
+ *
  * 生成验证码配置
- * @auther joy
- * @date 2017-11-15 21:49:43
+ *
  */
 @Configuration
 public class KaptchaConfig {

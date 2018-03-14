@@ -17,10 +17,9 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 
 /**
- * 类ShiroConfig的功能描述:
+ *
  * Shiro配置
- * @auther joy
- * @date 2017-11-15 21:50:12
+ *
  */
 @Configuration
 public class ShiroConfig {

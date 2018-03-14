@@ -8,10 +8,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 /**
- * 类ShiroSessionListener的功能描述:
+ *
  * 发现用户登出后，Session没有从Redis中销毁，虽然当前重新new了一个，但会对统计带来干扰，通过SessionListener解决这个问题
- * @auther joy
- * @date 2017-09-25 11:45:11
+ *
  */
 @Component
 public class ShiroSessionListener extends SessionListenerAdapter {
