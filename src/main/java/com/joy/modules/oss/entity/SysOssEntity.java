@@ -5,10 +5,9 @@ import java.util.Date;
 
 
 /**
- * 类SysOssEntity的功能描述:
+ *
  * 文件上传
- * @auther joy
- * @date 2017-08-25 16:17:47
+ *
  */
 public class SysOssEntity implements Serializable {
 	private static final long serialVersionUID = 1L;

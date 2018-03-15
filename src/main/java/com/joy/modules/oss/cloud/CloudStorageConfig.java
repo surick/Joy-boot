@@ -12,10 +12,9 @@ import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 
 /**
- * 类CloudStorageConfig的功能描述:
+ *
  * 云存储配置信息
- * @auther joy
- * @date 2017-08-25 16:16:22
+ *
  */
 public class CloudStorageConfig implements Serializable {
     private static final long serialVersionUID = 1L;

@@ -9,10 +9,9 @@ import java.io.Serializable;
 import java.util.Date;
 
 /**
- * 类ScheduleJobEntity的功能描述:
+ *
  * 定时器
- * @auther joy
- * @date 2017-08-25 16:18:41
+ *
  */
 public class ScheduleJobEntity extends BaseEntity implements Serializable {
 	private static final long serialVersionUID = 1L;

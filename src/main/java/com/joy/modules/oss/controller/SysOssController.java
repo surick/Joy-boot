@@ -29,10 +29,9 @@ import java.util.Map;
 
 
 /**
- * 类SysOssController的功能描述:
+ *
  * 文件上传
- * @auther joy
- * @date 2017-08-25 16:17:21
+ *
  */
 @RestController
 @RequestMapping("sys/oss")

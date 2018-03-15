@@ -10,12 +10,6 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import javax.annotation.Resource;
 
-/**
- * 类的功能描述.
- *
- * @Auther joy
- * @Date 2017/11/15
- */
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringBootTest(classes = JoyBootApplication.class)
 public class GenLocalUtils {

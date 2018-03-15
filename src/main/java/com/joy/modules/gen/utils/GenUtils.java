@@ -23,10 +23,9 @@ import java.util.zip.ZipEntry;
 import java.util.zip.ZipOutputStream;
 
 /**
- * 类GenUtils的功能描述:
+ *
  * 代码生成器   工具类
- * @auther joy
- * @date 2017-08-25 16:12:47
+ *
  */
 public class GenUtils {
 	//配置信息

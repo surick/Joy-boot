@@ -12,10 +12,9 @@ import java.io.IOException;
 import java.io.InputStream;
 
 /**
- * 类QiniuCloudStorageService的功能描述:
+ *
  * 七牛云存储
- * @auther joy
- * @date 2017-08-25 16:19:20
+ *
  */
 public class QiniuCloudStorageService extends CloudStorageService{
     private UploadManager uploadManager;

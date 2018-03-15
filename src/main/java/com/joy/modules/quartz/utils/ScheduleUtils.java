@@ -7,10 +7,9 @@ import org.quartz.*;
 
 
 /**
- * 类ScheduleUtils的功能描述:
+ *
  * 定时任务工具类
- * @auther joy
- * @date 2017-08-25 16:18:10
+ *
  */
 public class ScheduleUtils {
     private final static String JOB_NAME = "TASK_";

@@ -8,10 +8,9 @@ import java.util.Date;
 import java.util.UUID;
 
 /**
- * 类CloudStorageService的功能描述:
+ *
  * 云存储(支持七牛、阿里云、腾讯云、又拍云)
- * @auther joy
- * @date 2017-08-25 16:15:52
+ *
  */
 public abstract class CloudStorageService {
     /** 云存储配置信息 */

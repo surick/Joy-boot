@@ -1,10 +1,9 @@
 package com.joy.modules.gen.entity;
 
 /**
- * 类ColumnEntity的功能描述:
+ *
  * 列的属性
- * @auther joy
- * @date 2017-08-25 16:12:20
+ *
  */
 public class ColumnEntity {
 	//列名

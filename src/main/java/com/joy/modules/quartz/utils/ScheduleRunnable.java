@@ -8,10 +8,9 @@ import org.springframework.util.ReflectionUtils;
 import java.lang.reflect.Method;
 
 /**
- * 类ScheduleRunnable的功能描述:
+ *
  * 执行定时任务
- * @auther joy
- * @date 2017-08-25 16:18:02
+ *
  */
 public class ScheduleRunnable implements Runnable {
 	private Object target;

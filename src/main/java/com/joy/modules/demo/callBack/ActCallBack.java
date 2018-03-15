@@ -13,6 +13,6 @@ import org.springframework.stereotype.Component;
 public class ActCallBack {
 
     public void leaveBack(ProcessTaskDto processTaskDto){
-        System.out.println("请假回调成功啦！！！！！！！");
+        System.out.println("请假回调成功！");
     }
 }

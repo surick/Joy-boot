@@ -8,10 +8,9 @@ import javax.sql.DataSource;
 import java.util.Properties;
 
 /**
- * 类ScheduleConfig的功能描述:
+ *
  * 定时任务配置
- * @auther joy
- * @date 2017-11-15 21:50:36
+ *
  */
 @Configuration
 public class ScheduleConfig {
@@ -23,7 +22,7 @@ public class ScheduleConfig {
 
         //quartz参数
         Properties prop = new Properties();
-        prop.put("org.quartz.scheduler.instanceName", "HxyScheduler");
+        prop.put("org.quartz.scheduler.instanceName", "JoyScheduler");
         prop.put("org.quartz.scheduler.instanceId", "AUTO");
         //线程池配置
         prop.put("org.quartz.threadPool.class", "org.quartz.simpl.SimpleThreadPool");
@@ -40,7 +39,7 @@ public class ScheduleConfig {
         prop.put("org.quartz.jobStore.tablePrefix", "QRTZ_");
         factory.setQuartzProperties(prop);
 
-        factory.setSchedulerName("HxyScheduler");
+        factory.setSchedulerName("JoyScheduler");
         //延时启动
         factory.setStartupDelay(30);
         factory.setApplicationContextSchedulerContextKey("applicationContextKey");

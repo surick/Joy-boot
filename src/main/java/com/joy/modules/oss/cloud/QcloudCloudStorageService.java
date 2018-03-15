@@ -13,10 +13,9 @@ import java.io.IOException;
 import java.io.InputStream;
 
 /**
- * 类QcloudCloudStorageService的功能描述:
+ *
  * 腾讯云存储
- * @auther joy
- * @date 2017-08-25 16:19:06
+ *
  */
 public class QcloudCloudStorageService extends CloudStorageService{
     private COSClient client;

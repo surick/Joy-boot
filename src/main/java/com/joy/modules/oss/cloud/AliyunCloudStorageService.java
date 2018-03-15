@@ -7,10 +7,9 @@ import java.io.ByteArrayInputStream;
 import java.io.InputStream;
 
 /**
- * 类AliyunCloudStorageService的功能描述:
+ *
  * 阿里云存储
- * @auther joy
- * @date 2017-08-25 16:16:38
+ *
  */
 public class AliyunCloudStorageService extends CloudStorageService{
     private OSSClient client;

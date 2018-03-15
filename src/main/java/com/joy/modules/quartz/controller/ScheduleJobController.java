@@ -14,10 +14,9 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * 类ScheduleJobController的功能描述:
+ *
  * 定时任务
- * @auther joy
- * @date 2017-08-25 16:20:29
+ *
  */
 @RestController
 @RequestMapping("/sys/schedule")

@@ -5,10 +5,9 @@ import com.joy.modules.common.utils.SpringContextUtils;
 import com.joy.modules.sys.service.SysConfigService;
 
 /**
- * 类OSSFactory的功能描述:
+ *
  * 文件上传Factory
- * @auther joy
- * @date 2017-08-25 16:18:59
+ *
  */
 public final class OSSFactory {
     private static SysConfigService sysConfigService;

@@ -4,10 +4,9 @@ import java.io.Serializable;
 import java.util.Date;
 
 /**
- * 类ScheduleJobLogEntity的功能描述:
+ *
  * 定时执行日志
- * @auther joy
- * @date 2017-08-25 16:19:26
+ *
  */
 public class ScheduleJobLogEntity implements Serializable {
 	private static final long serialVersionUID = 1L;

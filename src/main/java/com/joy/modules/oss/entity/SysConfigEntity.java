@@ -4,10 +4,9 @@ package com.joy.modules.oss.entity;
 import org.hibernate.validator.constraints.NotBlank;
 
 /**
- * 类SysConfigEntity的功能描述:
+ *
  * 系统配置信息
- * @auther joy
- * @date 2017-08-25 16:19:13
+ *
  */
 public class SysConfigEntity {
 	private Long id;

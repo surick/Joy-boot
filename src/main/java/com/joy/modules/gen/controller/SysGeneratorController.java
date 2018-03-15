@@ -22,10 +22,9 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * 类SysGeneratorController的功能描述:
+ *
  * 代码生成器
- * @auther joy
- * @date 2017-08-25 16:20:43
+ *
  */
 @Controller
 @RequestMapping("/sys/generator")
@@ -65,7 +64,7 @@ public class SysGeneratorController {
 		byte[] data = sysGeneratorService.generatorCode(tableNames, Constant.genType.webDown.getValue());
 		
 		response.reset();  
-        response.setHeader("Content-Disposition", "attachment; filename=\"hxyFrame.zip\"");
+        response.setHeader("Content-Disposition", "attachment; filename=\"Joy.zip\"");
         response.addHeader("Content-Length", "" + data.length);  
         response.setContentType("application/octet-stream; charset=UTF-8");  
   

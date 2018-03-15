@@ -7,10 +7,9 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * 类SysGeneratorDao的功能描述:
+ *
  *  代码生成器
- * @auther joy
- * @date 2017-08-25 16:19:43
+ *
  */
 @Mapper
 public interface SysGeneratorDao {

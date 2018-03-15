@@ -41,7 +41,7 @@ public class BaoxiaoController {
         int pageNum = Utils.parseInt(request.getParameter("pageNum"), 1);
         Page<LeaveEntity> page = baoxiaoService.findPage(baoxiaoEntity, pageNum);
         model.addAttribute("page",page);
-        model.addAttribute("leave",baoxiaoEntity);
+        model.addAttribute("baoxiao",baoxiaoEntity);
         return "demo/baoxiao";
     }
 

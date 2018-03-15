@@ -6,10 +6,9 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
 /**
- * 类TestTask的功能描述:
+ *
  * 测试定时任务
- * @auther joy
- * @date 2017-08-25 09:33:10
+ *
  */
 @Component("testTask")
 public class TestTask {

@@ -3,10 +3,9 @@ package com.joy.modules.gen.entity;
 import java.util.List;
 
 /**
- * 类TableEntity的功能描述:
+ *
  * 表数据
- * @auther joy
- * @date 2017-08-25 16:18:16
+ *
  */
 public class TableEntity {
 	//表的名称

@@ -7,10 +7,9 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * 类SysOssService的功能描述:
+ *
  * 文件上传
- * @auther joy
- * @date 2017-08-25 16:13:56
+ *
  */
 public interface SysOssService {
 	

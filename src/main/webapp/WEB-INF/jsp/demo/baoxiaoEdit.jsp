@@ -11,41 +11,41 @@
 <div class="main-container" id="main-container">
     <form class="form-horizontal  bv-form" id="leaveForm">
         <div style="display: none">
-            <input id="id" name="id"  value="${leave.id}"/>
+            <input id="id" name="id"  value="${baoxiao.id}"/>
         </div>
         <div class="row">
             <div class="form-group col-xs-12 ">
-                <label class="col-xs-3 control-label no-padding-right"><i class="red"> * </i>请假标题:</label>
+                <label class="col-xs-3 control-label no-padding-right"><i class="red"> * </i>报销标题:</label>
                 <div class="col-xs-9">
 							<span class="col-xs-11 block input-icon input-icon-right">
-								<input id="title" name="title" type="text" class="form-control" value="${leave.title}"/>
+								<input id="title" name="title" type="text" class="form-control" value="${baoxiao.title}"/>
 							</span>
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="form-group col-xs-12 ">
-                <label class="col-xs-3 control-label no-padding-right"><i class="red"> * </i>请假天数:</label>
+                <label class="col-xs-3 control-label no-padding-right"><i class="red"> * </i>报销金额:</label>
                 <div class="col-xs-9">
 							<span class="col-xs-11 block input-icon input-icon-right">
-								<input id="day" name="day" type="text" class="form-control" value="${leave.day}"/>
+								<input id="money" name="money" type="text" class="form-control" value="${baoxiao.money}"/>
 							</span>
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="form-group col-xs-12">
-                <label class="col-xs-3 control-label no-padding-right">请假原因:</label>
+                <label class="col-xs-3 control-label no-padding-right">报销原因:</label>
                 <div class="col-xs-9">
 							<span class="col-xs-11 block input-icon input-icon-right">
-								<textarea id="leavewhy" name="leavewhy" class="form-control" rows="3">${leave.leavewhy}</textarea>
+								<textarea id="baoxiaowhy" name="baoxiaowhy" class="form-control" rows="3">${baoxiao.baoxiaowhy}</textarea>
 							</span>
                 </div>
             </div>
         </div>
         <div class="row" style="margin-left: 40%;padding-bottom: 28px;margin-top: 25px;">
             <button class="layui-btn" type="button" id="submitBtn">保 存</button>
-            <a class="layui-btn layui-btn-normal" href="${webRoot}/demo/leave/list">返 回</a>
+            <a class="layui-btn layui-btn-normal" href="${webRoot}/demo/baoxiao/list">返 回</a>
         </div>
     </form>
 </div>
@@ -53,19 +53,19 @@
 <script>
     //提交
     $("#submitBtn").click(function () {
-        var url ="${webRoot}/demo/leave/edit";
+        var url ="${webRoot}/demo/baoxiao/edit";
         $.post(url,$("#leaveForm").serialize(),function (result) {
             if(result.code == '0'){
                 if($("#id").val() == ''){
                     alert(result,function () {
-                        location.href='${webRoot}/demo/leave/list';
+                        location.href='${webRoot}/demo/baoxiao/list';
                     },function () {
                         $("#submitBtn").reset();
                     });
                 }else {
                     //更新成功，返回List页面
                     toast(result.msg);
-                    location.href='${webRoot}/demo/leave/list';
+                    location.href='${webRoot}/demo/baoxiao/list';
                 }
             }else {
                 alertMsg(result.msg);

@@ -6,8 +6,8 @@
 
 	<description>自定义标签</description>
 	<tlib-version>1.0</tlib-version>
-	<short-name>hxytags</short-name>
-	<uri>/hxytag</uri>
+	<short-name>joytags</short-name>
+	<uri>/joytag</uri>
 	
 	<!-- 自定义select 标签*****************star -->
 	<tag>

@@ -4,10 +4,9 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * 类BaseDao的功能描述:
+ *
  * 基础Dao(还需在XML文件里，有对应的SQL语句)
- * @auther joy
- * @date 2017-04-28 11:25:08
+ *
  */
 public interface BaseDao<T> {
 	
