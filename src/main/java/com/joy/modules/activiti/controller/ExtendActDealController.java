@@ -35,10 +35,7 @@ import java.util.Map;
 import java.util.Set;
 
 /**
- * 类的功能描述.
  * 流程办理相关操作
- * @Auther joy
- * @Date 2017/7/11
  */
 @Controller
 @RequestMapping("act/deal")

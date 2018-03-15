@@ -11,10 +11,7 @@ import javax.validation.Validator;
 import java.util.Set;
 
 /**
- * 类ValidatorUtils的功能描述:
  * hibernate-validator校验工具类
- * @auther joy
- * @date 2017-08-25 16:15:28
  */
 public class ValidatorUtils {
     private static Validator validator;

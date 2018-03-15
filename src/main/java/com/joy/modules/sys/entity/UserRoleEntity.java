@@ -5,7 +5,6 @@ import java.io.Serializable;
 
 /**
  * 用户角色关系表
- *
  */
 public class UserRoleEntity implements Serializable {
 	private static final long serialVersionUID = 1L;

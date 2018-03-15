@@ -10,10 +10,6 @@ import java.util.Map;
 
 /**
  * 业务流程  对应的 业务表
- * 
- * @author joy
- * @email huangxianyuan@gmail.com
- * @date 2017-07-14 11:09:21
  */
 public class ExtendActBusinessEntity extends BaseEntity implements Serializable {
 	private static final long serialVersionUID = 1L;

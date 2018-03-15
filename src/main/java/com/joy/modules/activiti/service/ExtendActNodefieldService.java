@@ -7,10 +7,6 @@ import java.util.Map;
 
 /**
  * 流程节点对应的字段权限表
- * 
- * @author joy
- * @email huangxianyuan@gmail.com
- * @date 2017-07-24 13:28:51
  */
 public interface ExtendActNodefieldService {
 	

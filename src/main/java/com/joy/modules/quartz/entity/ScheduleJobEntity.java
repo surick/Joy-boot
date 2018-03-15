@@ -9,9 +9,7 @@ import java.io.Serializable;
 import java.util.Date;
 
 /**
- *
  * 定时器
- *
  */
 public class ScheduleJobEntity extends BaseEntity implements Serializable {
 	private static final long serialVersionUID = 1L;

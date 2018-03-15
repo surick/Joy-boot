@@ -168,7 +168,7 @@
      * 退回到上一步
      */
     function backPrevious() {
-        alertMsg("该功能开发中,请后续关注");
+        alertMsg("该功能还在开发");
     }
 </script>
 

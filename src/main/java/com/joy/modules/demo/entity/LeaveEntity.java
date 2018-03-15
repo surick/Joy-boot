@@ -6,9 +6,7 @@ import com.joy.modules.common.entity.ActivitiBaseEntity;
 import org.hibernate.validator.constraints.NotEmpty;
 
 /**
- *
  * 请假demo
- *
  */
 @ActTable(tableName = "leaveaply",pkName="id")
 public class LeaveEntity extends ActivitiBaseEntity {

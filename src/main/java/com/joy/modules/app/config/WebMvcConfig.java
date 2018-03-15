@@ -11,10 +11,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 import java.util.List;
 
 /**
- * 类WebMvcConfig的功能描述:
  * MVC配置
- * @auther joy
- * @date 2017-11-15 21:51:02
  */
 @Configuration
 public class WebMvcConfig extends WebMvcConfigurerAdapter {

@@ -1,5 +1,3 @@
-
-
 var setting = {
 	data: {
 		simpleData: {

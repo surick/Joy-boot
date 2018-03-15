@@ -3,13 +3,6 @@ package com.joy.modules.common.utils;
 import javax.servlet.http.HttpServletRequest;
 import java.util.Enumeration;
 
-/**
- * 类的功能描述.
- *
- * @Auther joy
- * @Date 2017/9/8
- */
-
 public class WebUtils {
 
     /**

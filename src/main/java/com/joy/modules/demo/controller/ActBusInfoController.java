@@ -12,9 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 /**
- *
  * 流程相关的业务根据业务id查询公共类，路径为actKey，也就是业务key
- *
  */
 @RequestMapping("act/busInfo")
 @Controller

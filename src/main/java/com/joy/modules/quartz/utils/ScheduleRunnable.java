@@ -8,9 +8,7 @@ import org.springframework.util.ReflectionUtils;
 import java.lang.reflect.Method;
 
 /**
- *
  * 执行定时任务
- *
  */
 public class ScheduleRunnable implements Runnable {
 	private Object target;

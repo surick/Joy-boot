@@ -29,9 +29,7 @@ import java.util.Map;
 
 
 /**
- *
  * 文件上传
- *
  */
 @RestController
 @RequestMapping("sys/oss")

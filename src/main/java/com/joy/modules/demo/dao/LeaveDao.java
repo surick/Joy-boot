@@ -7,9 +7,6 @@ import org.springframework.stereotype.Repository;
 
 /**
  * 请假流程测试
- * 
- * @author joy
- *
  */
 @Mapper
 public interface LeaveDao extends BaseDao<LeaveEntity> {

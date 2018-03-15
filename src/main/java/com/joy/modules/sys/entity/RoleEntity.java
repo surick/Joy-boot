@@ -9,8 +9,6 @@ import java.util.List;
 
 /**
  * 角色表
- * 
- *
  */
 public class RoleEntity extends BaseEntity implements Serializable {
 	private static final long serialVersionUID = 1L;

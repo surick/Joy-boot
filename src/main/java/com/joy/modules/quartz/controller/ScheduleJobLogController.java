@@ -17,9 +17,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- *
  * 定时任务日志
- *
  */
 @RestController
 @RequestMapping("/sys/scheduleLog")

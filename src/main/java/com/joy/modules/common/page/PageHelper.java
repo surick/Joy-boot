@@ -16,9 +16,7 @@ import java.util.List;
 import java.util.Properties;
 
 /** 
- * Mybatis - 通用分页拦截器 
- * @author liuzh/abel533/isea 
- * Created by liuzh on 14-4-15. 
+ * Mybatis - 通用分页拦截器
  */  
 @Intercepts({@Signature(type = StatementHandler.class, method = "prepare", args = {Connection.class,Integer.class }),
         @Signature(type = ResultSetHandler.class, method = "handleResultSets", args = {Statement.class})})

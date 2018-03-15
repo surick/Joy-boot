@@ -7,10 +7,6 @@ import java.util.Map;
 
 /**
  * 菜单表
- * 
- * @author chenshun
- * @email huangxianyuan@gmail.com
- * @date 2017-05-03 10:07:59
  */
 public interface MenuService {
 	

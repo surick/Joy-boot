@@ -23,9 +23,7 @@ import java.util.zip.ZipEntry;
 import java.util.zip.ZipOutputStream;
 
 /**
- *
  * 代码生成器   工具类
- *
  */
 public class GenUtils {
 	//配置信息

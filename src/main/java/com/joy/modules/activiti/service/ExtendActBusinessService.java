@@ -8,10 +8,6 @@ import java.util.Map;
 
 /**
  * 业务流程  对应的 业务表
- * 
- * @author joy
- * @email huangxianyuan@gmail.com
- * @date 2017-07-14 11:09:21
  */
 public interface ExtendActBusinessService {
 	

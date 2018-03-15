@@ -5,10 +5,6 @@ import java.io.Serializable;
 
 /**
  * 节点可选人
- * 
- * @author joy
- * @email huangxianyuan@gmail.com
- * @date 2017-07-24 13:28:51
  */
 public class ExtendActNodeuserEntity implements Serializable {
 	private static final long serialVersionUID = 1L;

@@ -6,10 +6,6 @@ import java.util.List;
 
 /**
  * 流程节点配置
- * 
- * @author joy
- * @email huangxianyuan@gmail.com
- * @date 2017-07-24 13:28:51
  */
 public class ExtendActNodesetEntity implements Serializable {
 	private static final long serialVersionUID = 1L;

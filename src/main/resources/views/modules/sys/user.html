@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>管理员列表</title>
+	<title>用户列表</title>
 	#parse("modules/sys/header.html")
 </head>
 <body>
@@ -9,7 +9,7 @@
 	<div v-show="showList">
 		<div class="grid-btn">
 			<div class="form-group col-sm-2">
-				<input class="form-control" v-model="q.userName" @keyup.enter="query" placeholder="用户名">
+				<input class="form-control" v-model="q.userName" @keyup.enter="query" placeholder="请输入用户名">
 			</div>
 			<button class="layui-btn" id="searchSubmit" @click="query"><i class="layui-icon">&#xe615;</i>查 询</button>
 			#if($shiro.hasPermission("sys:user:update"))

@@ -10,8 +10,6 @@ import java.util.Date;
 /**
  * 日期转换工具类
  * 时间转换工具类
- * @author shuang
- *
  */
 public final class DateConverUtil {
 	/**

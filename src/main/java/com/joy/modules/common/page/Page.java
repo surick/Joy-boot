@@ -11,10 +11,6 @@ import java.util.List;
  * 
  * @ClassName: Page 
  * @Description: 分页类
- * @author HH
- * @date 2017年3月13日 下午4:27:17 
- * 
- * @param <T>
  */
 public class Page<T> {
 	 private int pageNum;  

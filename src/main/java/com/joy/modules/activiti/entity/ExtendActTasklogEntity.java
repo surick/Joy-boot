@@ -5,9 +5,6 @@ import java.util.Date;
 
 /**
  * 流程日志扩展类
- * @author joy
- * @email huangxianyuan@gmail.com
- * @date 2017-08-04 11:46:48
  */
 public class ExtendActTasklogEntity implements Serializable {
 	private static final long serialVersionUID = 1L;

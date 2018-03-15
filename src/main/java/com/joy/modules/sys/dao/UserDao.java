@@ -12,9 +12,7 @@ import java.util.Map;
 /**
  * 系统用户表
  * 
- * @author chenshun
- * @email huangxianyuan@gmail.com
- * @date 2017-05-03 09:41:38
+ *
  */
 @Mapper
 public interface UserDao extends BaseDao<UserEntity> {

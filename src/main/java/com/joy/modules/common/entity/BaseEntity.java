@@ -6,9 +6,7 @@ import java.util.Date;
 import java.util.List;
 
 /**
- *
  * 对业务实体做公共属性
- *
  */
 public class BaseEntity {
     /**

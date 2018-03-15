@@ -10,10 +10,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- * 类XssFilter的功能描述:
  * XSS过滤
- * @auther joy
- * @date 2017-08-25 16:20:08
  */
 public class XssFilter implements Filter {
 	/**

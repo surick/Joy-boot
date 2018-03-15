@@ -8,10 +8,6 @@ import java.util.Date;
 
 /**
  * 通知
- * 
- * @author joy
- * @email huangxianyuan@gmail.com
- * @date 2017-08-31 15:59:09
  */
 public class NoticeEntity extends BaseEntity implements Serializable {
 	private static final long serialVersionUID = 1L;

@@ -3,10 +3,7 @@ package com.joy.modules.common.annotation;
 import java.lang.annotation.*;
 
 /**
- * 类的功能描述.
  * 数据权限注解类
- * @Auther joy
- * @Date 2017/11/16
  */
 @Target(ElementType.METHOD)
 @Retention(RetentionPolicy.RUNTIME)

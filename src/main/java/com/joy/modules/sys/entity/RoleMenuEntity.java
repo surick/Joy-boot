@@ -5,7 +5,6 @@ import java.io.Serializable;
 
 /**
  * 权限角色表
- *
  */
 public class RoleMenuEntity implements Serializable {
 	private static final long serialVersionUID = 1L;

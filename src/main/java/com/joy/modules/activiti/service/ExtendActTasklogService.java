@@ -5,13 +5,6 @@ import com.joy.modules.activiti.entity.ExtendActTasklogEntity;
 import java.util.List;
 import java.util.Map;
 
-/**
- * 
- * 
- * @author joy
- * @email huangxianyuan@gmail.com
- * @date 2017-08-04 11:46:48
- */
 public interface ExtendActTasklogService {
 	
 	ExtendActTasklogEntity queryObject(String id);

@@ -6,10 +6,9 @@ import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
 /**
- * 类SysConfigDao的功能描述:
+ *
  * 系统配置信息
- * @auther joy
- * @date 2017-08-25 16:14:20
+ *
  */
 @Mapper
 public interface SysConfigDao extends BaseDao<SysConfigEntity> {

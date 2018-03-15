@@ -7,10 +7,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * 类ScheduleJobService的功能描述:
  * 定时任务
- * @auther joy
- * @date 2017-08-25 16:20:22
  */
 public interface ScheduleJobService {
 

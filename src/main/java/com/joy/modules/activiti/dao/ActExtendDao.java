@@ -8,10 +8,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * 类的功能描述.
  * 直接对activiti的表写sql查询，不通过api查询
- * @Auther joy
- * @Date 2017/7/31
  */
 @Mapper
 public interface ActExtendDao {

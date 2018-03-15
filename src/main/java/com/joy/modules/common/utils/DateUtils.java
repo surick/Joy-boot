@@ -4,10 +4,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
- * 类DateUtils的功能描述:
  * 日期处理
- * @auther joy
- * @date 2017-08-25 16:12:36
  */
 public class DateUtils {
 	/** 时间格式(yyyy-MM-dd) */

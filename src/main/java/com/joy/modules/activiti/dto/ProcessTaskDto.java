@@ -4,10 +4,7 @@ package com.joy.modules.activiti.dto;
 import java.util.Date;
 
 /**
- * 类ProcessTaskDto的功能描述:
  * 办理流程任务dto
- * @auther joy
- * @date 2017-08-02 16:29:10
  */
 public class ProcessTaskDto {
 	/**

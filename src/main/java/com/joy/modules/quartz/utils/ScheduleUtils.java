@@ -7,9 +7,7 @@ import org.quartz.*;
 
 
 /**
- *
  * 定时任务工具类
- *
  */
 public class ScheduleUtils {
     private final static String JOB_NAME = "TASK_";

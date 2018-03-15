@@ -17,7 +17,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import javax.servlet.http.HttpServletRequest;
 
 /**
- *
  * 业务树
  */
 @RequestMapping("demo/leave")

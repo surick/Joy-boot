@@ -5,9 +5,7 @@ import com.joy.modules.common.utils.SpringContextUtils;
 import com.joy.modules.sys.service.SysConfigService;
 
 /**
- *
  * 文件上传Factory
- *
  */
 public final class OSSFactory {
     private static SysConfigService sysConfigService;

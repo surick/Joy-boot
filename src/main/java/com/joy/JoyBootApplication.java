@@ -17,12 +17,13 @@ public class JoyBootApplication extends SpringBootServletInitializer {
 
 	public static void main(String[] args) {
 		SpringApplication.run(JoyBootApplication.class, args);
+		System.out.println("Joy启动成功！");
 	}
 
-	@Override
+	/*@Override
 	protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
 		return builder.sources(JoyBootApplication.class);
 	}
-
+*/
 
 }

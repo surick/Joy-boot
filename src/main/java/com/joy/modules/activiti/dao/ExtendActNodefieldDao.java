@@ -8,10 +8,6 @@ import java.util.List;
 
 /**
  * 流程节点对应的条件
- * 
- * @author joy
- * @email huangxianyuan@gmail.com
- * @date 2017-07-24 13:28:51
  */
 @Mapper
 public interface ExtendActNodefieldDao extends BaseDao<ExtendActNodefieldEntity> {

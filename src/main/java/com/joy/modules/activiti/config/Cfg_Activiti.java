@@ -11,7 +11,6 @@ import org.springframework.transaction.PlatformTransactionManager;
 import javax.sql.DataSource;
 
 /**
- * Created by liuruijie on 2017/2/20.
  * activiti工作流配置
  */
 @Configuration

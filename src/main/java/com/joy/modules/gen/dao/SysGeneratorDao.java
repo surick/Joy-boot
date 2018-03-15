@@ -7,9 +7,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- *
  *  代码生成器
- *
  */
 @Mapper
 public interface SysGeneratorDao {

@@ -9,9 +9,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- *
  * Velocity配置
- *
  */
 @Configuration
 public class VelocityConfig {

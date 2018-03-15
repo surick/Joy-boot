@@ -11,10 +11,7 @@ import org.springframework.stereotype.Component;
 import java.util.Date;
 
 /**
- * 类JwtUtils的功能描述:
  * jwt工具类
- * @auther joy
- * @date 2017-10-16 14:19:54
  */
 @ConfigurationProperties(prefix = "jwt")
 @Component

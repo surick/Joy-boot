@@ -10,10 +10,7 @@ import java.util.List;
 
 
 /**
- * 类的功能描述.
  * 用户工具类
- * @Auther joy
- * @Date 2017/5/10
  */
 
 public class UserUtils {

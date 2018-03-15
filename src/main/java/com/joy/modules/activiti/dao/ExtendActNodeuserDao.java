@@ -8,10 +8,6 @@ import java.util.List;
 
 /**
  * 节点可选人
- * 
- * @author joy
- * @email huangxianyuan@gmail.com
- * @date 2017-07-24 13:28:51
  */
 @Mapper
 public interface ExtendActNodeuserDao extends BaseDao<ExtendActNodeuserEntity> {

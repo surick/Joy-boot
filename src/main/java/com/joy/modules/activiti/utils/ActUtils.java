@@ -37,10 +37,7 @@ import java.io.InputStream;
 import java.util.*;
 
 /**
- * 类的功能描述.
  * 流程工具类
- * @Auther joy
- * @Date 2017/7/28
  */
 public class ActUtils {
     private static RepositoryService repositoryService = (RepositoryService) SpringContextUtils.getBean("repositoryService");

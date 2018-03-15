@@ -17,11 +17,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpServletRequest;
 
-/**
- *
- * @author w24164
- * @create 2018-03-12 16:20
- */
 @RequestMapping("demo/baoxiao")
 @Controller
 public class BaoxiaoController {
@@ -29,7 +24,7 @@ public class BaoxiaoController {
     BaoxiaoService baoxiaoService;
 
     /**
-     * 请假列表
+     * 报销列表
      * @param model
      * @param baoxiaoEntity
      * @param request
@@ -46,7 +41,7 @@ public class BaoxiaoController {
     }
 
     /**
-     * 请假详情
+     * 报销详情
      * @param model
      * @param id
      * @param request

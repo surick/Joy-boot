@@ -8,10 +8,7 @@ import org.apache.shiro.subject.Subject;
 
 
 /**
- * 类ShiroUtils的功能描述:
  * Shiro工具类
- * @auther joy
- * @date 2017-08-25 16:19:35
  */
 public class ShiroUtils {
 

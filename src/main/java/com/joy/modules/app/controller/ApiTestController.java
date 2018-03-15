@@ -11,10 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * 类ApiTestController的功能描述:
  * APP测试接口
- * @auther joy
- * @date 2017-10-16 14:16:18
  */
 @RestController
 @RequestMapping("/app")

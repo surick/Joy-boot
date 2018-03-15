@@ -10,7 +10,7 @@
     if ("ontouchend" in document) document.write("<script src='${webRoot}/js/jquery.mobile.custom.min.js'>" + "<" + "script>");
 </script>
 <script>
-	var webRoot  =  "${webRoot}";
+	var webRoot = "${webRoot}";
 </script>
 <script src="${webRoot}/js/html5shiv.js"></script>
 <script src="${webRoot}/js/respond.min.js"></script>

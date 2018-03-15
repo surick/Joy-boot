@@ -9,10 +9,6 @@ import java.util.Map;
 
 /**
  * 通知
- * 
- * @author joy
- * @email huangxianyuan@gmail.com
- * @date 2017-08-31 15:59:09
  */
 public interface NoticeService {
 	

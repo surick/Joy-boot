@@ -12,9 +12,7 @@ import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 
 /**
- *
  * 云存储配置信息
- *
  */
 public class CloudStorageConfig implements Serializable {
     private static final long serialVersionUID = 1L;

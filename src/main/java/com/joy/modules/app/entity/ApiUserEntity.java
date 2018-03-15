@@ -4,10 +4,7 @@ package com.joy.modules.app.entity;
 import com.joy.modules.sys.entity.UserEntity;
 
 /**
- * 类的功能描述.
  * 用户信息接口信息
- * @Auther joy
- * @Date 2017/10/18
  */
 
 public class ApiUserEntity extends UserEntity {

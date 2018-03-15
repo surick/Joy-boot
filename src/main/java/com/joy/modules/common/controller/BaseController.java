@@ -7,10 +7,7 @@ import com.joy.modules.sys.entity.UserEntity;
 import org.apache.log4j.Logger;
 
 /**
- * 类的功能描述.
  * 公共的控件器，可在类中实现一些共同的方法和属性 持续更新中
- * @Auther joy
- * @Date 2017/4/28
  */
 public class BaseController {
 

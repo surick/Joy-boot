@@ -6,10 +6,6 @@ import java.util.Date;
 
 /**
  * 业务流程关系表与activitiBaseEntity中字段一样
- * 
- * @author joy
- * @email huangxianyuan@gmail.com
- * @date 2017-08-04 13:56:50
  */
 public class ExtendActFlowbusEntity implements Serializable {
 	private static final long serialVersionUID = 1L;

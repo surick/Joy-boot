@@ -9,9 +9,7 @@ import redis.clients.jedis.JedisPool;
 import redis.clients.jedis.JedisPoolConfig;
 
 /**
- *
  * Redis配置
- *
  */
 @Configuration
 @EnableAutoConfiguration

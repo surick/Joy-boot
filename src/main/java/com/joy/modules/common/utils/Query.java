@@ -7,10 +7,7 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 
 /**
- * 类Query的功能描述:
  * 查询参数
- * @auther joy
- * @date 2017-08-25 16:13:19
  */
 public class Query extends LinkedHashMap<String, Object> {
 	private static final long serialVersionUID = 1L;

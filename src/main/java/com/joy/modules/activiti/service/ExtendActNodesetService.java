@@ -9,10 +9,6 @@ import java.util.Map;
 
 /**
  * 流程节点配置
- * 
- * @author joy
- * @email huangxianyuan@gmail.com
- * @date 2017-07-24 13:28:51
  */
 public interface ExtendActNodesetService {
 	

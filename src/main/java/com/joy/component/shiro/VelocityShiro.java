@@ -5,10 +5,7 @@ import org.apache.shiro.subject.Subject;
 import org.springframework.stereotype.Component;
 
 /**
- * 类的功能描述.
  * Shiro权限标签(Velocity版)
- * @Auther joy
- * @Date 2017/5/9
  */
 @Component
 public class VelocityShiro {

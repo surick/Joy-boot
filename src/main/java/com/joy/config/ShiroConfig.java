@@ -17,9 +17,7 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 
 /**
- *
  * Shiro配置
- *
  */
 @Configuration
 public class ShiroConfig {

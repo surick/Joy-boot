@@ -60,10 +60,7 @@ import java.util.*;
 
 
 /**
- * 类的功能描述.
  * activiti模型接口实现类
- * @Auther joy
- * @Date 2017/7/18
  */
 @Service
 public class ActModelerServiceImpl implements ActModelerService {
@@ -394,7 +391,7 @@ public class ActModelerServiceImpl implements ActModelerService {
         flowBus.setTableName(actTable.tableName());
         flowbusService.save(flowBus);
         //代理人设置 待完善
-        // TODO: 2017/8/4  代理人设置 待完善
+        // TODO: 2018/3/4  代理人设置 待完善
         //如果第一个节点是审批节点
         if(Constant.NodeType.EXAMINE.getValue().equals(processTaskDto.getNodeType())){
             List<Task> tasks = taskService.createTaskQuery().processDefinitionId(processTaskDto.getDefId()).processInstanceId(processTaskDto.getInstanceId()).list();
@@ -453,7 +450,7 @@ public class ActModelerServiceImpl implements ActModelerService {
                         }
                     }
                     //流程结束发送通知 待完善
-                    // TODO: 2017/8/4 流程结束发送通知 待完善
+                    // TODO: 2018/3/4 流程结束发送通知 待完善
                 }
             }
         }else {
@@ -693,7 +690,7 @@ public class ActModelerServiceImpl implements ActModelerService {
                 ExtendActNodesetEntity nextNode = nodesetService.queryByNodeId((String) pvmActivity.getId());
                 //下一级节点为会签节点
                 if(Constant.ActAction.MULIT.getValue().equals(nextNode.getNodeAction())){
-                    // TODO: 2017/8/10 暂不支持当前节点为会签，下一级节点也为会签
+                    // TODO: 2017/3/4 暂不支持当前节点为会签，下一级节点也为会签
                     //设置会签人员集
                     String[] nextUsers = processTaskDto.getNextUserIds().split(",");
                     Map<String,Object> userMap = new HashMap<>();
@@ -734,7 +731,7 @@ public class ActModelerServiceImpl implements ActModelerService {
                         List<Task> tasks = taskService.createTaskQuery().processInstanceId(processTaskDto.getInstanceId()).list();
                         for (Task t:tasks){
                             //设置下一个任务的办理人
-                            // TODO: 2017/8/10 如果是下个节点是并行结果，那么这里需要处理下 待开发
+                            // TODO: 2018/3/10 如果是下个节点是并行结果，那么这里需要处理下 待开发
                             taskService.setAssignee(t.getId(), processTaskDto.getNextUserIds());
                             ExtendActTasklogEntity tasklogEntity = new ExtendActTasklogEntity();
                             tasklogEntity.setId(Utils.uuid());

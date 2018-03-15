@@ -3,10 +3,7 @@ package com.joy.modules.activiti.annotation;
 import java.lang.annotation.*;
 
 /**
- * 类的功能描述.
  * 在实体类中对字段进行注解，业务表名
- * @Auther joy
- * @Date 2017/7/27
  */
 @Documented
 @Retention(RetentionPolicy.RUNTIME)

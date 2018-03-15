@@ -4,10 +4,7 @@ import java.io.Serializable;
 import java.util.List;
 
 /**
- * 类PageUtils的功能描述:
  * 分页工具类
- * @auther joy
- * @date 2017-08-25 16:12:59
  */
 public class PageUtils implements Serializable {
 	private static final long serialVersionUID = 1L;

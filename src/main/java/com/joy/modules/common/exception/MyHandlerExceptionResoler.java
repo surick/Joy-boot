@@ -15,12 +15,9 @@ import java.io.IOException;
 import java.io.PrintWriter;
 
 /**
- * 类的功能描述.
  * 自定义异常
  * 用于处理在请求映射和请求处理过程中抛出的异常的类，都要实现HandlerExceptionResolver接口。
  * HandlerExceptionResolver接口有一个方法resolveException，当controller层出现异常之后就会进入到这个方法resolveException
- * @Auther joy
- * @Date 2017/7/21
  */
 
 public class MyHandlerExceptionResoler implements HandlerExceptionResolver {

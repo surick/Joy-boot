@@ -4,9 +4,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- *
  * 基础Dao(还需在XML文件里，有对应的SQL语句)
- *
  */
 public interface BaseDao<T> {
 	

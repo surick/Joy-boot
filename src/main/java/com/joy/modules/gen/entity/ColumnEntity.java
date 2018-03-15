@@ -1,9 +1,7 @@
 package com.joy.modules.gen.entity;
 
 /**
- *
  * 列的属性
- *
  */
 public class ColumnEntity {
 	//列名

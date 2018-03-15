@@ -14,9 +14,9 @@
         <div class="col-md-12">
             <form class="layui-form" id="search-from" action="${webRoot}/demo/baoxiao/list">
                 <div class="layui-form-item">
-                    <label class="layui-form-label" style="width:6%;">报销标题:</label>
+                    <label class="layui-form-label" style="width:8%;">报销标题:</label>
                     <div class="layui-input-inline">
-                        <input type="text" name="title" value="${baoxiao.title}"  placeholder="请输入报销标题"  class="layui-input" >
+                        <input type="text" name="title" value="${baoxiao.title}"  placeholder="请输入标题"  class="layui-input" >
                     </div>
                     <button class="layui-btn" id="searchSubmit"><i class="layui-icon">&#xe615;</i>搜 索</button>
                     <button class="layui-btn layui-btn-warm" type="button" id="refresh">重 置</button>

@@ -18,10 +18,7 @@ import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
 /**
- * 类的功能描述.
  * 业务树
- * @Auther joy
- * @Date 2017/7/25
  */
 @RequestMapping("act/bus")
 @Controller

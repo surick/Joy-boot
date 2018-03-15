@@ -6,9 +6,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
  * 系统页面视图
- * 
- * @author joy
- * @date 2017年3月24日 下午11:05:27
  */
 @Controller
 public class SysPageController {

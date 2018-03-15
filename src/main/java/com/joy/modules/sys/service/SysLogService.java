@@ -7,10 +7,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * 类SysLogService的功能描述:
  * 系统日志
- * @auther joy
- * @date 2017-08-25 16:14:27
  */
 public interface SysLogService {
 	

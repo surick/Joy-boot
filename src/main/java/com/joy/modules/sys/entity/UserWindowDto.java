@@ -1,10 +1,7 @@
 package com.joy.modules.sys.entity;
 
 /**
- * 类的功能描述.
  * 审批范围dto
- * @Auther joy
- * @Date 2017/7/24
  */
 
 public class UserWindowDto {

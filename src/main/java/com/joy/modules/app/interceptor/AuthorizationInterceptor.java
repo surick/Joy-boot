@@ -16,10 +16,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * 类AuthorizationInterceptor的功能描述:
  * 权限(Token)验证
- * @auther joy
- * @date 2017-10-16 14:16:47
  */
 @Component
 public class AuthorizationInterceptor extends HandlerInterceptorAdapter {

@@ -5,10 +5,7 @@ import java.util.Date;
 
 
 /**
- * 类SysLogEntity的功能描述:
  * 系统日志
- * @auther joy
- * @date 2017-08-25 16:18:48
  */
 public class SysLogEntity implements Serializable {
 	private static final long serialVersionUID = 1L;

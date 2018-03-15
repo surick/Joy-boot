@@ -21,10 +21,7 @@ import java.util.Date;
 
 
 /**
- * 类SysLogAspect的功能描述:
  * 系统日志，切面处理类
- * @auther joy
- * @date 2017-08-25 16:13:10
  */
 @Aspect
 @Component

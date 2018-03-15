@@ -16,10 +16,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * 类DataAuthAspect的功能描述:
  * 数据权限过滤 切面类
- * @auther joy
- * @date 2017-11-16 16:04:03
  */
 @Aspect
 @Component

@@ -18,10 +18,7 @@ import java.util.concurrent.Future;
 
 
 /**
- * 类ScheduleJob的功能描述:
  * 定时任务
- * @auther joy
- * @date 2017-08-25 11:48:34
  */
 public class ScheduleJob extends QuartzJobBean {
 	private Logger logger = LoggerFactory.getLogger(getClass());

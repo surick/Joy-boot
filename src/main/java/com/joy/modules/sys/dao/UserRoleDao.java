@@ -9,10 +9,7 @@ import java.util.List;
 
 /**
  * 用户角色关系表
- * 
- * @author chenshun
- * @email huangxianyuan@gmail.com
- * @date 2017-05-03 10:07:59
+ *
  */
 @Mapper
 public interface UserRoleDao extends BaseDao<UserRoleEntity> {

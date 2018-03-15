@@ -18,10 +18,7 @@ import java.util.List;
 
 /**
  * 菜单表
- * 
- * @author joy
- * @email huangxianyuan@gmail.com
- * @date 2017-05-03 10:07:59
+ *
  */
 @RestController
 @RequestMapping("/sys/menu")

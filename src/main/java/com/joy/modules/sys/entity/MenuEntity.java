@@ -9,10 +9,7 @@ import java.util.List;
 
 /**
  * 菜单表
- * 
- * @author chenshun
- * @email huangxianyuan@gmail.com
- * @date 2017-05-03 10:07:59
+ *
  */
 public class MenuEntity extends BaseEntity implements Serializable {
 	private static final long serialVersionUID = 1L;

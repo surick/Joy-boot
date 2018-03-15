@@ -7,10 +7,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * 类Result的功能描述:
  * 返回数据实体类
- * @auther joy
- * @date 2017-04-28 11:57:50
  */
 public class Result extends HashMap<String, Object> {
 	private static final long serialVersionUID = 1L;

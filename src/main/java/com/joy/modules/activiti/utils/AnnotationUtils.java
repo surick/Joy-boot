@@ -12,13 +12,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-/**
- * 类的功能描述.
- *
- * @Auther joy
- * @Date 2017/8/11
- */
-
 public class AnnotationUtils {
 
     /**

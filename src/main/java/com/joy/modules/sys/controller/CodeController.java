@@ -18,10 +18,7 @@ import java.util.List;
 
 /**
  * 系统数据字典
- * 
- * @author joy
- * @email huangxianyuan@gmail.com
- * @date 2017-07-14 13:42:42
+ *
  */
 @RestController
 @RequestMapping("/sys/code")

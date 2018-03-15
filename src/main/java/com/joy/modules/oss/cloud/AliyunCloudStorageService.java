@@ -7,9 +7,7 @@ import java.io.ByteArrayInputStream;
 import java.io.InputStream;
 
 /**
- *
  * 阿里云存储
- *
  */
 public class AliyunCloudStorageService extends CloudStorageService{
     private OSSClient client;

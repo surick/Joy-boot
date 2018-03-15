@@ -15,10 +15,7 @@ import java.util.Map;
 import java.util.Set;
 
 /**
- * 类的功能描述.
  * activiti模型接口类
- * @Auther joy
- * @Date 2017/7/18
  */
 
 public interface ActModelerService {

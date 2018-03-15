@@ -32,7 +32,7 @@
 				</div>
 				<div class="row" style="margin-left: 30%;margin-top: 3%">
 					<button type="button" id="clickSubmit" onclick="clickSubmit();" class="layui-btn" >转办</button>
-					<button class="layui-btn layui-btn-primary" style="margin-left: 5%" type="button" onclick="closeThisWindow()">关 闭</button>
+					<button class="layui-btn layui-btn-primary" style="margin-left: 5%" type="button" onclick="closeThisWindow()">关闭</button>
 				</div>
 			</div>
 		</div>

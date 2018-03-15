@@ -31,10 +31,7 @@ import java.util.List;
 import java.util.Set;
 
 /**
- * 类的功能描述.
  * shiro 认证
- * @Auther joy
- * @Date 2017/4/27
  */
 @Component
 public class MyRealm extends AuthorizingRealm {

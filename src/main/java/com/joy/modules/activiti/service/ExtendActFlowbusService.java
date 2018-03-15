@@ -5,10 +5,6 @@ import com.joy.modules.activiti.entity.ExtendActFlowbusEntity;
 
 /**
  * 业务流程关系表与activitiBaseEntity中字段一样
- * 
- * @author joy
- * @email huangxianyuan@gmail.com
- * @date 2017-08-04 13:56:50
  */
 public interface ExtendActFlowbusService {
 	

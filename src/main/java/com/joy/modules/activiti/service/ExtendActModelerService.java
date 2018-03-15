@@ -9,10 +9,6 @@ import java.util.Map;
 
 /**
  * 流程模板扩展表
- * 
- * @author joy
- * @email huangxianyuan@gmail.com
- * @date 2017-07-14 11:02:01
  */
 public interface ExtendActModelerService {
 	

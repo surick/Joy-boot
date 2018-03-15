@@ -4,10 +4,7 @@ import com.joy.modules.common.common.RRException;
 import org.apache.commons.lang.StringUtils;
 
 /**
- * 类SQLFilter的功能描述:
  * SQL过滤
- * @auther joy
- * @date 2017-08-25 16:14:11
  */
 public class SQLFilter {
 

@@ -8,10 +8,6 @@ import java.io.Serializable;
 
 /**
  * 流程模板扩展表
- * 
- * @author joy
- * @email huangxianyuan@gmail.com
- * @date 2017-07-14 11:02:01
  */
 public class ExtendActModelEntity extends ActivitiBaseEntity implements Serializable {
 	private static final long serialVersionUID = 1L;

@@ -8,7 +8,6 @@ import java.io.Serializable;
 
 /**
  * 组织表
- *
  */
 public class OrganEntity extends BaseEntity implements Serializable {
 	private static final long serialVersionUID = 1L;

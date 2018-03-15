@@ -21,10 +21,7 @@ import javax.servlet.http.HttpServletRequest;
 
 /**
  * 通知
- * 
- * @author joy
- * @email huangxianyuan@gmail.com
- * @date 2017-08-31 15:59:09
+ *
  */
 @Controller
 @RequestMapping("sys/notice")

@@ -13,10 +13,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
- * 类ApiLoginController的功能描述:
  * APP登录授权
- * @auther joy
- * @date 2017-10-16 14:15:39
  */
 @Controller
 @RequestMapping("/app/user")

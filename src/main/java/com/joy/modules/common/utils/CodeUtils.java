@@ -8,10 +8,7 @@ import com.joy.modules.sys.service.CodeService;
 import java.util.Map;
 
 /**
- * 类的功能描述.
  * 数据字典工具类
- * @Auther joy
- * @Date 2017/7/25
  */
 
 public class CodeUtils {

@@ -2,8 +2,6 @@ package com.joy.modules.common.common;
 
 /**
  * 枚举常量
- * @Auther joy
- * @Date 2017/4/27
  */
 public class Constant {
     /**
@@ -14,7 +12,7 @@ public class Constant {
     /**
      * 系统默认密码
      */
-    public static final String DEF_PASSWORD="test";
+    public static final String DEF_PASSWORD="joy";
 
     /**
      * 分页条数

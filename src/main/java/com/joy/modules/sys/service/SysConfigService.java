@@ -8,10 +8,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * 类SysConfigService的功能描述:
  * 系统配置信息
- * @auther joy
- * @date 2017-08-25 16:13:33
  */
 public interface SysConfigService {
 	

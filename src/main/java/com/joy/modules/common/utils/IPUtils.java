@@ -6,10 +6,7 @@ import org.slf4j.LoggerFactory;
 import javax.servlet.http.HttpServletRequest;
 
 /**
- * 类IPUtils的功能描述:
  * IP地址
- * @auther joy
- * @date 2017-08-25 16:13:49
  */
 public class IPUtils {
 	private static Logger logger = LoggerFactory.getLogger(IPUtils.class);

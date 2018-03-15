@@ -11,7 +11,7 @@
             </div>
         </div>
         <div class="form-group col-sm-6 col-md-5 ">
-            <label class="col-sm-3 control-label no-padding-right">金额:</label>
+            <label class="col-sm-3 control-label no-padding-right">报销金额:</label>
             <div class="col-sm-9">
             <span class="col-xs-11 block input-icon input-icon-right">
                 <input id="money" name="money" type="text"  class="form-control" value="${baoxiao.money}" readonly/>

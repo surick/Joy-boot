@@ -4,9 +4,7 @@ import java.io.Serializable;
 import java.util.Date;
 
 /**
- *
  * 定时执行日志
- *
  */
 public class ScheduleJobLogEntity implements Serializable {
 	private static final long serialVersionUID = 1L;

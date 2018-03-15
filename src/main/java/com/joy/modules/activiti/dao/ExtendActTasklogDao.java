@@ -4,13 +4,6 @@ import com.joy.modules.activiti.entity.ExtendActTasklogEntity;
 import com.joy.modules.common.dao.BaseDao;
 import org.apache.ibatis.annotations.Mapper;
 
-/**
- * 
- * 
- * @author joy
- * @email huangxianyuan@gmail.com
- * @date 2017-08-04 11:46:48
- */
 @Mapper
 public interface ExtendActTasklogDao extends BaseDao<ExtendActTasklogEntity> {
     /**

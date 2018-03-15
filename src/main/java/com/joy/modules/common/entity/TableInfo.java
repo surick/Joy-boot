@@ -1,9 +1,7 @@
 package com.joy.modules.common.entity;
 
 /**
- *
  * 动态表信息
- *
  */
 public class TableInfo {
     public static final String TAB_FIELDS = "fields";

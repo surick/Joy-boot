@@ -5,10 +5,6 @@ import java.io.Serializable;
 
 /**
  * 通知和用户关系表
- * 
- * @author joy
- * @email huangxianyuan@gmail.com
- * @date 2017-08-31 15:58:58
  */
 public class NoticeUserEntity implements Serializable {
 	private static final long serialVersionUID = 1L;

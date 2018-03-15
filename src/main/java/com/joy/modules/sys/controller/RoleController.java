@@ -20,10 +20,7 @@ import java.util.Map;
 
 /**
  * 角色表
- * 
- * @author joy
- * @email huangxianyuan@gmail.com
- * @date 2017-05-03 10:07:59
+ *
  */
 @RestController
 @RequestMapping("sys/role")

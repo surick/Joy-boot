@@ -30,10 +30,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * 类的功能描述.
  * 流程模型相关操作
- * @Auther joy
- * @Date 2017/7/11
  */
 @Controller
 @RequestMapping("act/model")

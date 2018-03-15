@@ -4,9 +4,7 @@ package com.joy.modules.oss.entity;
 import org.hibernate.validator.constraints.NotBlank;
 
 /**
- *
  * 系统配置信息
- *
  */
 public class SysConfigEntity {
 	private Long id;

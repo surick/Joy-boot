@@ -6,9 +6,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
 /**
- *
  * 测试定时任务
- *
  */
 @Component("testTask")
 public class TestTask {

@@ -12,8 +12,6 @@ import java.util.List;
 
 /**
  * JSON对象工具类
- * 
- * @author shuang  
  */
 public final class JsonUtil {
 	private JsonUtil() {}

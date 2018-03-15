@@ -24,10 +24,9 @@ import java.awt.image.BufferedImage;
 import java.io.IOException;
 
 /**
- * 类的功能描述.
+ *
  * 登陆控制
- * @Auther joy
- * @Date 2017/4/28
+ *
  */
 @Controller
 public class LoginController extends BaseController {
@@ -103,8 +102,7 @@ public class LoginController extends BaseController {
      * 退出登陆
      * @params []
      * @return java.lang.String
-     * @auther joy
-     * @date 2017-05-02 14:01:23
+     *
      */
     @RequestMapping(value="logout",method = RequestMethod.GET)
     @SysLog("退出系统")

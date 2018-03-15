@@ -3,9 +3,7 @@ package com.joy.modules.gen.entity;
 import java.util.List;
 
 /**
- *
  * 表数据
- *
  */
 public class TableEntity {
 	//表的名称
