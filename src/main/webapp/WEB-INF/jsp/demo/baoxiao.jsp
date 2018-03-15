@@ -14,7 +14,7 @@
         <div class="col-md-12">
             <form class="layui-form" id="search-from" action="${webRoot}/demo/baoxiao/list">
                 <div class="layui-form-item">
-                    <label class="layui-form-label" style="width:8%;">报销标题:</label>
+                    <label class="layui-form-label" style="width:10%;">报销标题:</label>
                     <div class="layui-input-inline">
                         <input type="text" name="title" value="${baoxiao.title}"  placeholder="请输入标题"  class="layui-input" >
                     </div>
@@ -61,13 +61,13 @@
                                 </c:if>
                                 <c:if test="${(baoxiao.status == 2 || baoxiao.status == 3) && baoxiao.actResult !=2}">
                                     <button class="layui-btn layui-btn-small" type="button" onclick="doTaskTab('baoxiao','${baoxiao.id}','${baoxiao.instanceId}')"><i class="layui-icon">&#xe705;</i>审批记录</button>
-                                    <button class="layui-btn layui-btn-small layui-btn-warm" type="button" onclick="showFlowImg('${baoxiao.instanceId}')"><i class="layui-icon">&#xe60d;</i>查看流程图</button>
+                                    <button class="layui-btn layui-btn-small layui-btn-warm" type="button" onclick="showFlowImg('${baoxiao.instanceId}')"><i class="layui-icon">&#xe60d;</i>查看</button>
                                 </c:if>
-                                <c:if test="${(leave.status == 2 || leave.status == 3) && leave.actResult == 2}">
+                                <c:if test="${(baoxiao.status == 2 || baoxiao.status == 3) && baoxiao.actResult == 2}">
                                     <a class="layui-btn layui-btn-small" href="${webRoot}/demo/baoxiao/info?id=${baoxiao.id}" ><i class="layui-icon">&#xe642;</i>编辑</a>
                                     <button class="layui-btn layui-btn-small" type="button" onclick="flowSumbit('baoxiao','${baoxiao.id}')"><i class="layui-icon">&#xe604;</i>提交</button>
                                     <button class="layui-btn layui-btn-small" type="button" onclick="doTaskTab('baoxiao','${baoxiao.id}','${baoxiao.instanceId}')"><i class="layui-icon">&#xe705;</i>审批记录</button>
-                                    <button class="layui-btn layui-btn-small layui-btn-warm" type="button" onclick="showFlowImg('${baoxiao.instanceId}')"><i class="layui-icon">&#xe60d;</i>查看流程图</button>
+                                    <button class="layui-btn layui-btn-small layui-btn-warm" type="button" onclick="showFlowImg('${baoxiao.instanceId}')"><i class="layui-icon">&#xe60d;</i>查看</button>
                                 </c:if>
                             </div>
                         </td>

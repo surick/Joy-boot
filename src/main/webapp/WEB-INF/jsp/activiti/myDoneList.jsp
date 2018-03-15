@@ -14,7 +14,7 @@
         <div class="row" style="margin-top: 20px;">
             <form class="layui-form" id="search-from" action="${webRoot}/act/deal/myDoneList">
                 <div class="layui-form-item">
-                    <label class="layui-form-label" style="width:6%;">业务编号:</label>
+                    <label class="layui-form-label" style="width:10%;">业务编号:</label>
                     <div class="layui-input-inline">
                         <input type="text" name="code" value="${code}"  placeholder="请输入业务编号"  class="layui-input" >
                     </div>
@@ -81,7 +81,7 @@
             scrollbar: false,
             type: 2,
             title : ["查看流程信息" , true],
-            area: ['90%', '90%'], //宽高
+            area: ['100%', '100%'], //宽高
             content: [url,'yes'],
             shadeClose : false,
         });

@@ -142,7 +142,7 @@
             scrollbar: false,
             type: 2,
             title : [flowInfo.title , true],
-            area: ['90%', '90%'], //宽高
+            area: ['100%', '100%'], //宽高
             content: [url,'no'],
             shadeClose : false,
         });

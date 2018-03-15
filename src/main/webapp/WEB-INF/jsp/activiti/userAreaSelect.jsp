@@ -13,11 +13,11 @@
 		<div class="row" style="margin-top: 20px; margin-left: 20px">
 			<form class="layui-form" id="search-from" action="${webRoot}/act/model/userAreaSelect">
 				<div class="layui-form-item">
-					<label class="layui-form-label" style="width:7%;">类型：</label>
+					<label class="layui-form-label" style="width:10%;">类型：</label>
 					<div class="layui-input-inline">
 						<tag:select nameKey="act_user_type" otherAttr="lay-filter='searchFilter'" name="type" initSelectedKey="${type}" />
 					</div>
-					<label class="layui-form-label" style="width:8%;">搜索框：</label>
+					<label class="layui-form-label" style="width:10%;">搜索框：</label>
 					<div class="layui-input-inline layui-input-inline">
 						<input type="text" name="name"  value="${userWindow.name }" placeholder="请输入标题"  class="layui-input" >
 					</div>

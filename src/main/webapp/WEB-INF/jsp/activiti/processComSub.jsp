@@ -104,7 +104,7 @@
             scrollbar: false,
             type: 2,
             title : ["选择下一步审批人" , true],
-            area: ['70%', '70%'], //宽高
+            area: ['85%', '85%'], //宽高
             content: [url,'no'],
             shadeClose : false,
         });
@@ -121,7 +121,7 @@
             scrollbar: false,
             type: 2,
             title : ["转办弹框" , true],
-            area: ['70%', '70%'], //宽高
+            area: ['85%', '85%'], //宽高
             content: [url,'no'],
             shadeClose : false,
         });

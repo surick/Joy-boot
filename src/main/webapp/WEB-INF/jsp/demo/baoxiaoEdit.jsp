@@ -35,7 +35,7 @@
         </div>
         <div class="row">
             <div class="form-group col-xs-12">
-                <label class="col-xs-3 control-label no-padding-right">报销原因:</label>
+                <label class="col-xs-3 control-label no-padding-right">报销类别:</label>
                 <div class="col-xs-9">
 							<span class="col-xs-11 block input-icon input-icon-right">
 								<textarea id="baoxiaowhy" name="baoxiaowhy" class="form-control" rows="3">${baoxiao.baoxiaowhy}</textarea>

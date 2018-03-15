@@ -13,7 +13,7 @@
 		<div class="row" style="margin-top: 20px;">
 			<form class="layui-form" id="search-from" action="${webRoot}${url}">
 				<div class="layui-form-item">
-					<label class="layui-form-label" style="width:10%;">姓名：</label>
+					<label class="layui-form-label" style="width:12%;">姓名：</label>
 					<div class="layui-input-inline layui-input-inline">
 						<input type="text" name="userName" value="${user.userName}"  placeholder="请输入搜索内容"  class="layui-input" >
 						<input name="nodeAction" type="hidden" value="${flag }" />
