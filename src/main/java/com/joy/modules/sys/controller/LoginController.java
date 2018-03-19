@@ -24,9 +24,7 @@ import java.awt.image.BufferedImage;
 import java.io.IOException;
 
 /**
- *
  * 登陆控制
- *
  */
 @Controller
 public class LoginController extends BaseController {

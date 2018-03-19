@@ -1,16 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@include file="/WEB-INF/jsp/include/taglib.jsp" %>
 <form action="" id="actFieldForm">
-    <%--<div class="row" name="isagreeShow">
-        <div class="form-group col-sm-6 col-md-5 ">
-            <label class="col-sm-3 control-label no-padding-right">是否同意:</label>
-            <div class="col-sm-9">
-                <span class="col-xs-11 block input-icon input-icon-right">
-                    <tag:select nameKey="YES_NO" name="isagree" clazz="form-control" />
-                </span>
-            </div>
-        </div>
-    </div>--%>
     <div class="row">
         <div class="form-group col-sm-8 ">
             <label class="control-label col-sm-2">审批意见:</label>
@@ -26,7 +16,7 @@
         <button class="layui-btn layui-btn-danger" type="button" onclick="backStartUser()">驳回到发起人</button>
         <button class="layui-btn layui-btn-danger" type="button" onclick="refuse()">拒绝</button>
         <button class="layui-btn layui-btn-warm" type="button" onclick="turnToDo()">转办</button>
-        <button class="layui-btn layui-btn-danger" type="button" onclick="backPrevious()">跳转</button>
+      <%--  <button class="layui-btn layui-btn-danger" type="button" onclick="backPrevious()">跳转</button>--%>
         <button class="layui-btn layui-btn-primary" type="button" onclick="closeThisWindow()">关 闭</button>
     </div>
 </form>
