@@ -17,25 +17,29 @@ public class BaoxiaoEntity extends ActivitiBaseEntity {
 
     private String userId;
 
-    @ActField(name = "报销标题")
-    @NotEmpty(message = "报销标题不能为空")
+    @ActField(name = "出差事由")
+    @NotEmpty(message = "出差事由不能为空")
     private String title;
 
-    @NotEmpty(message = "报销金额不能为空")
-    @ActField(name = "报销金额",isJudg = true)
+    @NotEmpty(message = "差旅费不能为空")
+    @ActField(name = "差旅费",isJudg = true)
     private int money;
+
+    @NotEmpty(message = "补贴不能为空")
+    @ActField(name = "补贴",isJudg = true)
+    private int bt;
 
     /**
      * 报销原因
      */
-    @NotEmpty(message = "报销原因不能为空")
+    @NotEmpty(message = "起讫地点不能为空")
     private String baoxiaowhy;
 
     /**
      * 发票单据
      */
     @NotEmpty(message = "发票单据不能为空")
-    private byte[] fapiao;
+    private byte[] fp;
 
     /**
      * 报销人姓名
@@ -90,11 +94,19 @@ public class BaoxiaoEntity extends ActivitiBaseEntity {
         this.baoxiaoUser = baoxiaoUser;
     }
 
-    public byte[] getFapiao() {
-        return fapiao;
+    public int getBt() {
+        return bt;
     }
 
-    public void setFapiao(byte[] fapiao) {
-        this.fapiao = fapiao;
+    public void setBt(int bt) {
+        this.bt = bt;
+    }
+
+    public byte[] getFp() {
+        return fp;
+    }
+
+    public void setFp(byte[] fp) {
+        this.fp = fp;
     }
 }

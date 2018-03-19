@@ -9,6 +9,8 @@
         <result property="userId" column="user_id"/>
         <result property="title" column="title"/>
         <result property="money" column="money"/>
+        <result property="bt" column="bt"/>
+        <result property="fp" column="fp"/>
         <result property="baoxiaowhy" column="baoxiaowhy"/>
         <result property="status" column="status"/>
         <result property="startTime" column="start_time"/>
@@ -29,6 +31,8 @@
         user_id,
         title,
         money,
+        bt,
+        fp,
         status,
         start_time,
         instance_id,
@@ -77,6 +81,8 @@
         #{userId},
         #{title},
         #{money},
+        #{bt},
+        #{fp},
         #{status},
         #{startTime},
         #{instanceId},
@@ -98,7 +104,9 @@
         <set>
             <if test="userId != null">`user_id` = #{userId}, </if>
             <if test="title != null">`title` = #{title}, </if>
-            <if test="day != null">`money` = #{money}, </if>
+            <if test="money != null">`money` = #{money}, </if>
+            <if test="bt != null">`bt` = #{bt}, </if>
+            <if test="fp != null">`fp` = #{fp}, </if>
             <if test="status != null">`status` = #{status},</if>
             <if test="startTime != null">`start_time` = #{startTime},</if>
             <if test="instanceId != null">`instance_id` = #{instanceId},</if>

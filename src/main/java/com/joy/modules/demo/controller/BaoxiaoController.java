@@ -11,9 +11,12 @@ import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.multipart.MultipartFile;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -40,6 +43,12 @@ public class BaoxiaoController {
         return "demo/baoxiao";
     }
 
+    @RequestMapping("showfp")
+    @RequiresPermissions("act:model:all")
+    public String showFp(@RequestParam(value = "fp",required = false) String fp){
+        return "demo/bxfp";
+    }
+
     /**
      * 报销详情
      * @param model
@@ -64,14 +73,20 @@ public class BaoxiaoController {
      */
     @RequestMapping(value = "edit",method = RequestMethod.POST)
     @RequiresPermissions("act:model:all")
-    @ResponseBody
-    public Result edit(BaoxiaoEntity baoxiaoEntity){
+    public String edit(MultipartFile fp, BaoxiaoEntity baoxiaoEntity, BindingResult bindingResult,Model model,HttpServletRequest request)
+            throws Exception{
+        byte[] fpbytes = fp.getBytes();
+        baoxiaoEntity.setFp(fpbytes);
         if(StringUtils.isEmpty(baoxiaoEntity.getId())){
             baoxiaoService.save(baoxiaoEntity);
         }else {
             baoxiaoService.update(baoxiaoEntity);
         }
-        return Result.ok();
+        int pageNum = Utils.parseInt(request.getParameter("pageNum"), 1);
+        Page<LeaveEntity> page = baoxiaoService.findPage(baoxiaoEntity, pageNum);
+        model.addAttribute("page",page);
+        model.addAttribute("baoxiao",baoxiaoEntity);
+        return "demo/baoxiao";
     }
 
 

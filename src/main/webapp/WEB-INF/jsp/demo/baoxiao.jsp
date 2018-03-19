@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>报销</title>
+    <title>差旅报销</title>
     <%@include file="/common/commonCSS.jsp" %>
     <%@include file="/common/commonJS.jsp" %>
     <%@include file="/WEB-INF/jsp/include/taglib.jsp" %>
@@ -14,9 +14,9 @@
         <div class="col-md-12">
             <form class="layui-form" id="search-from" action="${webRoot}/demo/baoxiao/list">
                 <div class="layui-form-item">
-                    <label class="layui-form-label" style="width:10%;">报销标题:</label>
+                    <label class="layui-form-label" style="width:10%;">出差事由:</label>
                     <div class="layui-input-inline">
-                        <input type="text" name="title" value="${baoxiao.title}"  placeholder="请输入标题"  class="layui-input" >
+                        <input type="text" name="title" value="${baoxiao.title}" class="layui-input" >
                     </div>
                     <button class="layui-btn" id="searchSubmit"><i class="layui-icon">&#xe615;</i>搜 索</button>
                     <button class="layui-btn layui-btn-warm" type="button" id="refresh">重 置</button>
@@ -31,10 +31,11 @@
                 <thead>
                 <tr>
                     <th>序号</th>
-                    <th>标题</th>
+                    <th>出差事由</th>
                     <th>报销人</th>
-                    <th>报销金额</th>
-                    <th>报销原因</th>
+                    <th>差旅费</th>
+                    <th>补贴</th>
+                    <th>起讫地点</th>
                     <th>审批结果</th>
                     <th>流程状态</th>
                     <th>创建时间</th>
@@ -48,6 +49,7 @@
                         <td>${baoxiao.title}</td>
                         <td>${baoxiao.baoxiaoUser}</td>
                         <td>${baoxiao.money}</td>
+                        <td>${baoxiao.bt}</td>
                         <td>${baoxiao.baoxiaowhy}</td>
                         <td>${fns:getCodeName("act_result",baoxiao.actResult)}</td>
                         <td>${fns:getCodeName("act_process_status",baoxiao.status)}</td>
