@@ -420,6 +420,25 @@ public class ExtendActDealController {
         return result;
     }
 
+    @RequestMapping(value = "refuse",method = RequestMethod.POST)
+    @ResponseBody
+    public Result refuse(ProcessTaskDto processTaskDto,HttpServletRequest request){
+        Result result = null;
+        try {
+            Map<String, String[]> parameterMap = request.getParameterMap();
+            Map<String,Object> params = new LinkedCaseInsensitiveMap<>();
+            for (String key:parameterMap.keySet()){
+                params.put(key,parameterMap.get(key)[0]);
+            }
+            actModelerService.refuse(processTaskDto,params);
+            result=Result.ok("拒绝成功");
+        } catch (Exception e) {
+            e.printStackTrace();
+            result=Result.error("拒绝失败");
+        }
+        return result;
+    }
+
 
 
 

@@ -936,6 +936,52 @@ public class ActModelerServiceImpl implements ActModelerService {
 
     @Override
     @Transactional
+    public void refuse(ProcessTaskDto processTaskDto,Map<String,Object> map) throws Exception {
+        if(StringUtils.isEmpty(processTaskDto.getTaskId())){
+            throw new MyException("任务id不能为空");
+        }
+        if(StringUtils.isEmpty(processTaskDto.getDefId())){
+            throw new MyException("流程定义id不能为空");
+        }
+        if(StringUtils.isEmpty(processTaskDto.getInstanceId())){
+            throw new MyException("流程实例不能为空");
+        }
+        //查询流程业务基本信息
+        Task task = taskService.createTaskQuery().taskId(processTaskDto.getTaskId()).singleResult();
+        ExtendActNodesetEntity nodesetEntity = nodesetService.queryByNodeId(task.getTaskDefinitionKey());
+        ExtendActBusinessEntity actBus = businessService.queryByActKey(ActUtils.findProcessDefinitionEntityByTaskId(task.getId()).getKey());
+
+        ActivityImpl endNode = ActUtils.findActivitiImpl(processTaskDto.getTaskId(), "end");
+        ActUtils.turnTransition(processTaskDto.getTaskId(),endNode.getId(),null,processTaskDto.getRemark());
+        //更新流程扩展日志表
+        ExtendActTasklogEntity taskLog = new ExtendActTasklogEntity();
+        Date date = new Date();
+        taskLog.setTaskId(processTaskDto.getTaskId());
+        taskLog.setAppOpinion(processTaskDto.getRemark());
+        taskLog.setDealId(UserUtils.getCurrentUserId().toString());
+        taskLog.setDealTime(date);
+        taskLog.setAppAction(Constant.ActTaskResult.REFUSE.getValue());
+        tasklogService.updateByTaskId(taskLog);
+        Class<?> aClass = Class.forName(actBus.getClassurl());
+        ActTable actTable = aClass.getAnnotation(ActTable.class);
+        //保存流程更改过的业务记录信息
+        changeFields(actTable,processTaskDto.getBusId(),nodesetEntity.getChangeFiles(),actBus.getClassurl(),map);
+        //更新业务状态信息 为已经审批
+        Map<String, Object> updateMap = new HashMap<>();
+        updateMap.put(TableInfo.TAB_TABLENAME, actTable.tableName());
+        updateMap.put(TableInfo.TAB_PKNAME, actTable.pkName());
+        updateMap.put(TableInfo.TAB_ID, processTaskDto.getBusId());
+        updateMap.put("status", Constant.ActStauts.END.getValue());
+        updateMap.put("actResult",Constant.ActResult.REFUSE.getValue());
+        actExtendDao.updateBusInfo(updateMap);
+        ExtendActFlowbusEntity flowbusEntity = new ExtendActFlowbusEntity();
+        flowbusEntity.setStatus(Constant.ActStauts.END.getValue());
+        flowbusEntity.setBusId(processTaskDto.getBusId());
+        flowbusService.updateByBusId(flowbusEntity);
+    }
+
+    @Override
+    @Transactional
     public void turnToDo(ProcessTaskDto processTaskDto,String toUserId) {
         if(StringUtils.isEmpty(processTaskDto.getTaskId())){
             throw new MyException("任务id不能为空");

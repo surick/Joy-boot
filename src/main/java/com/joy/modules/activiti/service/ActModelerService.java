@@ -144,6 +144,9 @@ public interface ActModelerService {
      */
     void endFailFolw(ProcessTaskDto processTaskDto, Map<String, Object> map) throws Exception;
 
+
+    void refuse(ProcessTaskDto processTaskDto, Map<String, Object> map) throws Exception;
+
     /**
      * 转办
      * @param processTaskDto

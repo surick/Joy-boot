@@ -24,7 +24,7 @@
     <div class="row" style="margin-top: 20px;margin-left: 20%">
         <button class="layui-btn" type="button" onclick="clickSubmit()">办理</button>
         <button class="layui-btn layui-btn-danger" type="button" onclick="backStartUser()">驳回到发起人</button>
-        <button class="layui-btn layui-btn-danger" type="button" onclick="backPrevious()">退回上一步</button>
+        <button class="layui-btn layui-btn-danger" type="button" onclick="refuse()">拒绝</button>
         <button class="layui-btn layui-btn-warm" type="button" onclick="turnToDo()">转办</button>
         <button class="layui-btn layui-btn-danger" type="button" onclick="backPrevious()">跳转</button>
         <button class="layui-btn layui-btn-primary" type="button" onclick="closeThisWindow()">关 闭</button>
@@ -169,6 +169,40 @@
      */
     function backPrevious() {
         alertMsg("该功能还在开发");
+    }
+
+    function refuse() {
+        var url ="${webRoot}/act/deal/refuse";
+        var params ={
+            'busId':processInfo.busId,
+            'taskId':processInfo.taskId,
+            'instanceId':processInfo.instanceId,
+            'defId':processInfo.defId,
+        };
+        var fileArr=processInfo.changeFields;
+        for(var i=0;i<fileArr.length;i++){
+            var fieldName = fileArr[i];
+            if (fieldName == ''){
+                continue;
+            }
+            //父级搜索表单
+            var fieldValue=$("#"+fieldName+"").val();
+            params[fieldName]=fieldValue;
+        }
+        var remark = $("#actFieldForm textarea[name='remark']").val();
+        params["remark"]=remark;
+        $.post(url,params,function (result) {
+            if(result.code == '0'){
+                alert(result,function () {
+                    //父级搜索 刷新待办列表
+                    $(parent.document.getElementById("main-container")).find("#searchForm").submit();
+                    closeThisWindow();
+
+                });
+            }else {
+                alertMsg(result.msg);
+            }
+        });
     }
 </script>
 

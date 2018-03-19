@@ -44,14 +44,6 @@ public class Constant {
      */
     public final static String CLOUD_STORAGE_CONFIG_KEY = "CLOUD_STORAGE_CONFIG_KEY";
 
-    /*******************************solr Core名称 开始*************************/
-
-    /**
-     * 文章
-     */
-    public static final String CORE_ARTICLE ="article";
-
-    /*******************************solr Core名称 结束*************************/
 
     /*******************************数据字典mark 开始*************************/
 
@@ -465,7 +457,11 @@ public class Constant {
         /**
          * 转办
          */
-        TURN_DO("5");
+        TURN_DO("5"),
+        /**
+         * 拒绝
+         */
+        REFUSE("6");
 
         private String value;
 
@@ -487,13 +483,18 @@ public class Constant {
          */
         AGREE("1"),
         /**
-         * 不同意
+         * 驳回
          */
         NO_AGREE("2"),
         /**
          * 审批中
          */
-        DISAGREE("3");
+        DISAGREE("3"),
+        /**
+         * 拒绝
+         */
+        REFUSE("4");
+
 
         private String value;
 

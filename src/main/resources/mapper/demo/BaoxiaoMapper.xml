@@ -118,7 +118,7 @@
             <if test="updateTime != null">`update_time` = #{updateTime},</if>
             <if test="remark != null">`remark` = #{remark},</if>
             <if test="actResult != null">`actResult` = #{actResult},</if>
-            <if test="leavewhy != null">`baoxiaoWhy` = #{baoxiaowhy},</if>
+            <if test="baoxiaowhy != null">`baoxiaoWhy` = #{baoxiaowhy},</if>
         </set>
         where id = #{id}
     </update>

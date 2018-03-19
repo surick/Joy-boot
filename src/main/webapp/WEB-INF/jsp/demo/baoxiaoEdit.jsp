@@ -58,7 +58,7 @@
                 <label class="col-xs-3 control-label no-padding-right"><i class="red"> * </i>上传票据:</label>
                 <div class="col-xs-9">
 							<span class="col-xs-11 block input-icon input-icon-right">
-								<input id="fp" name="fp" type="file" class="form-control" value="${baoxiao.fp}"/>
+								<input id="fp" name="fp" type="file" value="${baoxiao.fp}"/>
 							</span>
                 </div>
             </div>
