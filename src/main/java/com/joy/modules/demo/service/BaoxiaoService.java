@@ -2,7 +2,6 @@ package com.joy.modules.demo.service;
 
 import com.joy.modules.common.page.Page;
 import com.joy.modules.demo.entity.BaoxiaoEntity;
-import com.joy.modules.demo.entity.LeaveEntity;
 
 import java.util.List;
 import java.util.Map;
@@ -28,5 +27,5 @@ public interface BaoxiaoService {
 
     void deleteBatch(String[] ids);
 
-    Page<LeaveEntity> findPage(BaoxiaoEntity baoxiaoEntity, int pageNum);
+    Page<BaoxiaoEntity> findPage(BaoxiaoEntity baoxiaoEntity, int pageNum);
 }
