@@ -5,7 +5,6 @@ import com.joy.modules.common.utils.Result;
 import com.joy.modules.common.utils.StringUtils;
 import com.joy.modules.common.utils.Utils;
 import com.joy.modules.demo.entity.BaoxiaoEntity;
-import com.joy.modules.demo.entity.LeaveEntity;
 import com.joy.modules.demo.service.BaoxiaoService;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -37,7 +36,7 @@ public class BaoxiaoController {
     @RequiresPermissions("act:model:all")
     public String list(Model model , BaoxiaoEntity baoxiaoEntity, HttpServletRequest request){
         int pageNum = Utils.parseInt(request.getParameter("pageNum"), 1);
-        Page<LeaveEntity> page = baoxiaoService.findPage(baoxiaoEntity, pageNum);
+        Page<BaoxiaoEntity> page = baoxiaoService.findPage(baoxiaoEntity, pageNum);
         model.addAttribute("page",page);
         model.addAttribute("baoxiao",baoxiaoEntity);
         return "demo/baoxiao";
@@ -83,7 +82,7 @@ public class BaoxiaoController {
             baoxiaoService.update(baoxiaoEntity);
         }
         int pageNum = Utils.parseInt(request.getParameter("pageNum"), 1);
-        Page<LeaveEntity> page = baoxiaoService.findPage(baoxiaoEntity, pageNum);
+        Page<BaoxiaoEntity> page = baoxiaoService.findPage(baoxiaoEntity, pageNum);
         model.addAttribute("page",page);
         model.addAttribute("baoxiao",baoxiaoEntity);
         return "demo/baoxiao";
