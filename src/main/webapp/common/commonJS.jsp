@@ -6,14 +6,11 @@
 <script type="text/javascript">
     window.jQuery || document.write("<script src='${webRoot}/js/jquery-1.10.2.min.js'>" + "<" + "script>");
 </script>
-<script type="text/javascript">
-    if ("ontouchend" in document) document.write("<script src='${webRoot}/js/jquery.mobile.custom.min.js'>" + "<" + "script>");
-</script>
 <script>
 	var webRoot = "${webRoot}";
 </script>
-<script src="${webRoot}/js/html5shiv.js"></script>
-<script src="${webRoot}/js/respond.min.js"></script>
+<script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<script src="https://cdn.bootcss.com/html5shiv/r29/html5.min.js"></script>
 <script src="${webRoot}/js/typeahead-bs2.min.js"></script><%--自动完成 AutoComplete--%>
 <script type="text/javascript" src="${webRoot}/js/chosen.jquery.min.js"></script> <%--标签进行级联--%>
 <script type="text/javascript" src="${webRoot}/js/select2.min.js"></script> <%--下框插件--%>

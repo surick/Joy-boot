@@ -62,13 +62,13 @@
                                     <button class="layui-btn layui-btn-danger layui-btn-small" type="button" onclick="deleteById('${baoxiao.id}')"><i class="layui-icon">&#xe640;</i>删除</button>
                                 </c:if>
                                 <c:if test="${(baoxiao.status == 2 || baoxiao.status == 3) && baoxiao.actResult !=2}">
-                                    <button class="layui-btn layui-btn-small" type="button" onclick="doTaskTab('baoxiao','${baoxiao.id}','${baoxiao.instanceId}')"><i class="layui-icon">&#xe705;</i>记录</button>
+                                    <button class="layui-btn layui-btn-small" type="button" onclick="doTaskTab('baoxiao','${baoxiao.id}','${baoxiao.instanceId}')">记录</button>
                                     <button class="layui-btn layui-btn-small layui-btn-warm" type="button" onclick="showFlowImg('${baoxiao.instanceId}')"><i class="layui-icon">&#xe60d;</i>查看</button>
                                 </c:if>
                                 <c:if test="${(baoxiao.status == 2 || baoxiao.status == 3) && baoxiao.actResult == 2}">
                                     <a class="layui-btn layui-btn-small" href="${webRoot}/demo/baoxiao/info?id=${baoxiao.id}" ><i class="layui-icon">&#xe642;</i>编辑</a>
                                     <button class="layui-btn layui-btn-small" type="button" onclick="flowSumbit('baoxiao','${baoxiao.id}')"><i class="layui-icon">&#xe604;</i>提交</button>
-                                    <button class="layui-btn layui-btn-small" type="button" onclick="doTaskTab('baoxiao','${baoxiao.id}','${baoxiao.instanceId}')"><i class="layui-icon">&#xe705;</i>记录</button>
+                                    <button class="layui-btn layui-btn-small" type="button" onclick="doTaskTab('baoxiao','${baoxiao.id}','${baoxiao.instanceId}')">记录</button>
                                     <button class="layui-btn layui-btn-small layui-btn-warm" type="button" onclick="showFlowImg('${baoxiao.instanceId}')"><i class="layui-icon">&#xe60d;</i>查看</button>
                                 </c:if>
                             </div>

@@ -1,6 +1,5 @@
 <link href="${webRoot}/css/bootstrap.min.css" rel="stylesheet"/>
 <link rel="stylesheet" href="${webRoot}/css/font-awesome.min.css"/>
-<link rel="stylesheet" href="${webRoot}/css/font-awesome-ie7.min.css"/>
 <link rel="stylesheet" href="${webRoot}/css/chosen.css" />
 <link rel="stylesheet" href="${webRoot}/plugins/validator/css/bootstrapValidator.css"/>
 <link rel="stylesheet" href="${webRoot}/plugins/ztree/css/zTreeStyle/zTreeStyle.css"/>

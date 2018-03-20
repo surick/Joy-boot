@@ -60,13 +60,13 @@
                                             <button class="layui-btn layui-btn-danger layui-btn-small" type="button" onclick="deleteById('${leave.id}')"><i class="layui-icon">&#xe640;</i>删除</button>
                                         </c:if>
                                         <c:if test="${(leave.status == 2 || leave.status == 3) && leave.actResult !=2}">
-                                            <button class="layui-btn layui-btn-small" type="button" onclick="doTaskTab('leave','${leave.id}','${leave.instanceId}')"><i class="layui-icon">&#xe705;</i>审批记录</button>
+                                            <button class="layui-btn layui-btn-small" type="button" onclick="doTaskTab('leave','${leave.id}','${leave.instanceId}')">记录</button>
                                             <button class="layui-btn layui-btn-small layui-btn-warm" type="button" onclick="showFlowImg('${leave.instanceId}')"><i class="layui-icon">&#xe60d;</i>查看</button>
                                         </c:if>
                                         <c:if test="${(leave.status == 2 || leave.status == 3) && leave.actResult == 2}">
                                             <a class="layui-btn layui-btn-small" href="${webRoot}/demo/leave/info?id=${leave.id}" ><i class="layui-icon">&#xe642;</i>编辑</a>
                                             <button class="layui-btn layui-btn-small" type="button" onclick="flowSumbit('leave','${leave.id}')"><i class="layui-icon">&#xe604;</i>提交</button>
-                                            <button class="layui-btn layui-btn-small" type="button" onclick="doTaskTab('leave','${leave.id}','${leave.instanceId}')"><i class="layui-icon">&#xe705;</i>审批记录</button>
+                                            <button class="layui-btn layui-btn-small" type="button" onclick="doTaskTab('leave','${leave.id}','${leave.instanceId}')">记录</button>
                                             <button class="layui-btn layui-btn-small layui-btn-warm" type="button" onclick="showFlowImg('${leave.instanceId}')"><i class="layui-icon">&#xe60d;</i>查看</button>
                                         </c:if>
                                     </div>
