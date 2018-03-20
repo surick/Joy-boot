@@ -1,3 +1,5 @@
+<link rel="icon" href="https://dev-1253372767.file.myqcloud.com/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="https://dev-1253372767.file.myqcloud.com/favicon.ico" />
 <link href="${webRoot}/css/bootstrap.min.css" rel="stylesheet"/>
 <link rel="stylesheet" href="${webRoot}/css/font-awesome.min.css"/>
 <link rel="stylesheet" href="${webRoot}/css/chosen.css" />
