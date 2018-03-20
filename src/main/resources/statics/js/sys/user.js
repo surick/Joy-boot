@@ -14,7 +14,16 @@ $(function () {
 					'<span class="label label-success">正常</span>' :
 					'<span class="label label-danger">禁用</span>';
 			}},
-			{ label: '创建时间', name: 'createTime', index: "create_time", width: 80,editable:false,formatter:"date",formatoptions: {srcformat:'u',newformat:'m-d H:i:s'}}
+			{ label: '创建时间', name: 'createTime', index: "create_time", width: 80,editable:false,formatter:function(cellvalue, options, rowObject){
+                    if(cellvalue==null ||cellvalue==""){return ""}
+                    var time = new Date(cellvalue);
+                    return time.getFullYear()+"-"
+                        +(time.getMonth()<9?("0"+(time.getMonth()+1)):(time.getMonth()+1))+"-"
+                        +(time.getDate()<10?("0"+time.getDate()):(time.getDate()))+" "
+                        +(time.getHours()<10?("0"+time.getHours()):(time.getHours()))+":"
+                        +(time.getMinutes()<10?("0"+time.getMinutes()):(time.getMinutes()))+":"
+                        +(time.getSeconds()<10?("0"+time.getSeconds()):(time.getSeconds()));
+                }}
         ],
 		viewrecords: true,
         height: 385,

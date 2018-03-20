@@ -9,7 +9,7 @@ $(function () {
 			{ label: '通知来源 1=普通通知（人工发起） 2=流程通知', name: 'soucre', index: 'soucre', width: 80 }, 			
 			{ label: '通知状态 0=已发布 1=草稿 ', name: 'status', index: 'status', width: 80 }, 			
 			{ label: '是否紧急 0是1否', name: 'isUrgent', index: 'is_urgent', width: 80 }, 			
-			{ label: '发布时间', name: 'releaseTimee', index: 'release_timee', width: 80,editable:false,formatter:"date",formatoptions: {srcformat:'u',newformat:'m-d H:i:s'} },
+			{ label: '发布时间', name: 'releaseTimee', index: 'release_timee', width: 80,editable:false},
 			{ label: '', name: 'createTime', index: 'create_time', width: 80 }, 			
 			{ label: '', name: 'updateTime', index: 'update_time', width: 80 }, 			
 			{ label: '', name: 'createId', index: 'create_id', width: 80 }, 			

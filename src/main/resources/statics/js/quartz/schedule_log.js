@@ -14,7 +14,16 @@ $(function () {
 					'<span class="label label-danger pointer" onclick="vm.showError('+row.logId+')">失败</span>';
 			}},
 			{ label: '耗时(单位：毫秒)', name: 'times', width: 70 },
-			{ label: '执行时间', name: 'createTime', width: 80 }
+			{ label: '执行时间', name: 'createTime', width: 80,formatter:function(cellvalue, options, rowObject){
+                    if(cellvalue==null ||cellvalue==""){return ""}
+                    var time = new Date(cellvalue);
+                    return time.getFullYear()+"-"
+                        +(time.getMonth()<9?("0"+(time.getMonth()+1)):(time.getMonth()+1))+"-"
+                        +(time.getDate()<10?("0"+time.getDate()):(time.getDate()))+" "
+                        +(time.getHours()<10?("0"+time.getHours()):(time.getHours()))+":"
+                        +(time.getMinutes()<10?("0"+time.getMinutes()):(time.getMinutes()))+":"
+                        +(time.getSeconds()<10?("0"+time.getSeconds()):(time.getSeconds()));
+                } }
         ],
 		viewrecords: true,
         height: 385,

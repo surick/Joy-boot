@@ -1,7 +1,5 @@
 package com.joy.modules.common.entity;
 
-import com.fasterxml.jackson.databind.annotation.JsonSerialize;
-
 import java.util.Date;
 import java.util.List;
 
