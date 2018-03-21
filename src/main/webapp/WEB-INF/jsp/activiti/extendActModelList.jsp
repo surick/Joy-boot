@@ -31,8 +31,8 @@
                     <th>名称</th>
                     <th>业务</th>
                     <th>是否部署</th>
-                    <th>机构</th>
-                    <th>部门</th>
+                   <%-- <th>机构</th>
+                    <th>部门</th>--%>
                     <th>创建时间</th>
                     <th>操作</th>
                 </tr>
@@ -44,8 +44,8 @@
                         <td>${model.name}</td>
                         <td>${model.businessName}</td>
                         <td>${fns:getCodeName("YES_NO",model.status)}</td>
-                        <td>${model.bapName}</td>
-                        <td>${model.baName}</td>
+                        <%--<td>${model.bapName}</td>
+                        <td>${model.baName}</td>--%>
                         <td><fmt:formatDate value="${model.createTime}" pattern="yyyy-MM-dd"/></td>
                         <td>
                             <div class=" btn-group ">
