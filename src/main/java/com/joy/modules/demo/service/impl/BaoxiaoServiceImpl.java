@@ -8,9 +8,7 @@ import com.joy.modules.common.utils.StringUtils;
 import com.joy.modules.common.utils.UserUtils;
 import com.joy.modules.common.utils.Utils;
 import com.joy.modules.demo.dao.BaoxiaoDao;
-import com.joy.modules.demo.dao.LeaveDao;
 import com.joy.modules.demo.entity.BaoxiaoEntity;
-import com.joy.modules.demo.entity.LeaveEntity;
 import com.joy.modules.demo.service.BaoxiaoService;
 import com.joy.modules.sys.entity.UserEntity;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -87,7 +85,7 @@ public class BaoxiaoServiceImpl implements BaoxiaoService {
     }
 
     @Override
-    public Page<LeaveEntity> findPage(BaoxiaoEntity baoxiaoEntity, int pageNum) {
+    public Page<BaoxiaoEntity> findPage(BaoxiaoEntity baoxiaoEntity, int pageNum) {
         PageHelper.startPage(pageNum, Constant.pageSize);
         baoxiaoDao.queryList(baoxiaoEntity);
         return PageHelper.endPage();
