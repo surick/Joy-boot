@@ -1,5 +1,6 @@
 package com.joy.modules.demo.service.impl;
 
+import com.joy.modules.activiti.utils.ActUtils;
 import com.joy.modules.common.common.Constant;
 import com.joy.modules.common.exception.MyException;
 import com.joy.modules.common.page.Page;
@@ -14,6 +15,7 @@ import com.joy.modules.sys.entity.UserEntity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.io.InputStream;
 import java.util.Date;
 import java.util.List;
 import java.util.Map;
@@ -45,6 +47,11 @@ public class BaoxiaoServiceImpl implements BaoxiaoService {
         return baoxiaoDao.queryTotal(map);
     }
 
+ /*   @Override
+    public byte[] getBxfp(String fp) {
+        return baoxiaoDao.getBxfp(fp);
+    }*/
+
     @Override
     public void save(BaoxiaoEntity baoxiao){
         UserEntity currentUser = UserUtils.getCurrentUser();
@@ -56,7 +63,7 @@ public class BaoxiaoServiceImpl implements BaoxiaoService {
         baoxiao.setStatus(Constant.ActStauts.DRAFT.getValue());
         baoxiao.setUserId(UserUtils.getCurrentUserId());
         baoxiao.setBapid(currentUser.getBapid());
-        baoxiao.setBaid(currentUser.getBaid());//未改
+        baoxiao.setBaid(currentUser.getBaid());
 
         baoxiaoDao.save(baoxiao);
     }

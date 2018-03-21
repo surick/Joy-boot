@@ -18,6 +18,9 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.io.InputStream;
 
 @RequestMapping("demo/baoxiao")
 @Controller
@@ -44,8 +47,17 @@ public class BaoxiaoController {
 
     @RequestMapping("showfp")
     @RequiresPermissions("act:model:all")
-    public String showFp(@RequestParam(value = "fp",required = false) String fp){
+    public String showFp(@RequestParam(value = "fp",required = false) String fp, HttpServletResponse response){
         return "demo/bxfp";
+       /* try {
+            byte[] bs = baoxiaoService.getBxfp(fp);
+            //输出到页面
+            response.getOutputStream().write(bs);
+            response.getOutputStream().close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return null;*/
     }
 
     /**
@@ -72,7 +84,7 @@ public class BaoxiaoController {
      */
     @RequestMapping(value = "edit",method = RequestMethod.POST)
     @RequiresPermissions("act:model:all")
-    public String edit(MultipartFile fp, BaoxiaoEntity baoxiaoEntity, BindingResult bindingResult,Model model,HttpServletRequest request)
+    public String edit(MultipartFile fp, BaoxiaoEntity baoxiaoEntity, BindingResult bindingResult)
             throws Exception{
         byte[] fpbytes = fp.getBytes();
         baoxiaoEntity.setFp(fpbytes);
@@ -81,11 +93,7 @@ public class BaoxiaoController {
         }else {
             baoxiaoService.update(baoxiaoEntity);
         }
-        int pageNum = Utils.parseInt(request.getParameter("pageNum"), 1);
-        Page<BaoxiaoEntity> page = baoxiaoService.findPage(baoxiaoEntity, pageNum);
-        model.addAttribute("page",page);
-        model.addAttribute("baoxiao",baoxiaoEntity);
-        return "demo/baoxiao";
+        return "redirect:list";
     }
 
 

@@ -6,5 +6,5 @@ import org.apache.ibatis.annotations.Mapper;
 
 @Mapper
 public interface BaoxiaoDao extends BaseDao<BaoxiaoEntity> {
-
+    /*byte[] getBxfp(String fp);*/
 }

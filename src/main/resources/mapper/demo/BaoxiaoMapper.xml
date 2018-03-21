@@ -70,6 +70,10 @@
         select count(*) from baoxiaoAply
     </select>
 
+   <!-- <select id="getBxfp" resultType="byte">
+        select fp from baoxiaoAply where code = #{fp}
+    </select>-->
+
     <insert id="save" parameterType="com.joy.modules.demo.entity.BaoxiaoEntity">
         insert into baoxiaoAply
         (
