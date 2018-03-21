@@ -6,7 +6,7 @@
 	<groupId>com.github</groupId>
 	<artifactId>Joy-boot</artifactId>
 	<version>${Joy.version}</version>
-	<packaging>jar</packaging>
+	<packaging>war</packaging>
 
 	<name>Joy-boot</name>
 	<description>Joy-boot</description>
@@ -48,7 +48,7 @@
 		<pagehelper>1.1.2</pagehelper>
 	</properties>
 
-	<!-- 阿里云maven仓库 -->
+	<!-- 仓库 -->
 	<repositories>
 		<repository>
 			<id>public</id>
