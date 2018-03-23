@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="com.joy.modules.demo.dao.BaoxiaoDao">
+<mapper namespace="com.joy.modules.demo.dao.BxDao">
 
 
-    <resultMap type="com.joy.modules.demo.entity.BaoxiaoEntity" id="baoxiaoMap">
+    <resultMap type="com.joy.modules.demo.entity.BxEntity" id="bxMap">
         <result property="id" column="id"/>
         <result property="userId" column="user_id"/>
         <result property="title" column="title"/>
@@ -48,17 +48,17 @@
         baoxiaowhy
     </sql>
 
-    <select id="queryObject" resultType="com.joy.modules.demo.entity.BaoxiaoEntity" resultMap="baoxiaoMap">
+    <select id="queryObject" resultType="com.joy.modules.demo.entity.BxEntity" resultMap="bxMap">
         select
         <include refid="Base_Column_List" />
-        from baoxiaoAply
+        from bxaply
         where id = #{value}
     </select>
 
-    <select id="queryList" resultType="com.joy.modules.demo.entity.BaoxiaoEntity" resultMap="baoxiaoMap">
+    <select id="queryList" resultType="com.joy.modules.demo.entity.BxEntity" resultMap="bxMap">
         select
         <include refid="Base_Column_List" />,(SELECT user_name FROM sys_user s WHERE s.id=l.user_id)AS baoxiaoUser
-        from baoxiaoAply l
+        from bxaply l
         WHERE 1=1
         <if test="title!=null and title!='' ">
             AND title LIKE concat('%',#{title},'%')
@@ -67,15 +67,15 @@
     </select>
 
     <select id="queryTotal" resultType="int">
-        select count(*) from baoxiaoAply
+        select count(*) from bxaply
     </select>
 
-   <!-- <select id="getBxfp" resultType="byte">
-        select fp from baoxiaoAply where code = #{fp}
-    </select>-->
+    <!-- <select id="getBxfp" resultType="byte">
+         select fp from baoxiaoAply where code = #{fp}
+     </select>-->
 
-    <insert id="save" parameterType="com.joy.modules.demo.entity.BaoxiaoEntity">
-        insert into baoxiaoAply
+    <insert id="save" parameterType="com.joy.modules.demo.entity.BxEntity">
+        insert into bxaply
         (
         <include refid="Base_Column_List" />
         )
@@ -103,8 +103,8 @@
         )
     </insert>
 
-    <update id="update" parameterType="com.joy.modules.demo.entity.BaoxiaoEntity">
-        update baoxiaoAply
+    <update id="update" parameterType="com.joy.modules.demo.entity.BxEntity">
+        update bxaply
         <set>
             <if test="userId != null">`user_id` = #{userId}, </if>
             <if test="title != null">`title` = #{title}, </if>
@@ -128,11 +128,11 @@
     </update>
 
     <delete id="delete">
-        delete from baoxiaoAply where id = #{value}
+        delete from bxaply where id = #{value}
     </delete>
 
     <delete id="deleteBatch">
-        delete from baoxiaoAply where id in
+        delete from bxaply where id in
         <foreach item="id" collection="array" open="(" separator="," close=")">
             #{id}
         </foreach>

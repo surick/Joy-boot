@@ -6,43 +6,43 @@
             <label class="col-sm-3 control-label no-padding-right">编号:</label>
             <div class="col-sm-9">
             <span class="col-xs-11 block input-icon input-icon-right">
-                <input id="code" name="code" type="text"  class="form-control" value="${baoxiao.code}" readonly/>
+                <input id="code" name="code" type="text"  class="form-control" value="${bx.code}" readonly/>
             </span>
             </div>
         </div>
         <div class="form-group col-sm-6 col-md-5 ">
-            <label class="col-sm-3 control-label no-padding-right">出差事由:</label>
+            <label class="col-sm-3 control-label no-padding-right">项目事由:</label>
             <div class="col-sm-9">
                 <span class="col-xs-11 block input-icon input-icon-right">
-                    <input id="title" name="title" type="text"  class="form-control" value="${baoxiao.title}" readonly/>
+                    <input id="title" name="title" type="text"  class="form-control" value="${bx.title}" readonly/>
                 </span>
             </div>
         </div>
     </div>
     <div class="row">
         <div class="form-group col-sm-6 col-md-5 ">
-            <label class="col-sm-3 control-label no-padding-right">差旅费:</label>
+            <label class="col-sm-3 control-label no-padding-right">办公费:</label>
             <div class="col-sm-9">
             <span class="col-xs-11 block input-icon input-icon-right">
-                <input id="money" name="money" type="text"  class="form-control" value="${baoxiao.money}" readonly/>
+                <input id="money" name="money" type="text"  class="form-control" value="${bx.money}" readonly/>
             </span>
             </div>
         </div>
         <div class="form-group col-sm-6 col-md-5 ">
-            <label class="col-sm-3 control-label no-padding-right">补贴:</label>
+            <label class="col-sm-3 control-label no-padding-right">材料费:</label>
             <div class="col-sm-9">
             <span class="col-xs-11 block input-icon input-icon-right">
-                <input id="bt" name="bt" type="text"  class="form-control" value="${baoxiao.bt}" readonly/>
+                <input id="bt" name="bt" type="text"  class="form-control" value="${bx.bt}" readonly/>
             </span>
             </div>
         </div>
     </div>
     <div class="row">
         <div class="form-group col-sm-6 col-md-5 ">
-            <label class="col-sm-3 control-label no-padding-right">起讫地点:</label>
+            <label class="col-sm-3 control-label no-padding-right">其它:</label>
             <div class="col-sm-9">
             <span class="col-xs-11 block input-icon input-icon-right">
-                <textarea id="baoxiaowhy" name="baoxiaowhy" class="form-control" readonly>${baoxiao.baoxiaowhy}</textarea>
+                <textarea id="baoxiaowhy" name="baoxiaowhy" class="form-control" readonly>${bx.baoxiaowhy}</textarea>
             </span>
             </div>
         </div>
@@ -50,11 +50,11 @@
             <label class="col-sm-3 control-label no-padding-right">票据:</label>
             <div class="col-sm-9">
             <span class="col-xs-11 block input-icon input-icon-right">
-                <%--<input id="fp" name="fp" type="text"  class="form-control" value="${baoxiao.fp}" readonly/>--%>
+                <%--<input id="fp" name="fp" type="text"  class="form-control" value="${bx.fp}" readonly/>--%>
                 <a href="#" onclick="showFp()">查看</a>
                 <script>
                     function showFp() {
-                        var url="${webRoot}/demo/baoxiao/showfp?fp=${baoxiao.code}";
+                        var url="${webRoot}/demo/probx/showfp?fp=${bx.code}";
                         //弹框层
                         layer.open({
                             scrollbar: false,
