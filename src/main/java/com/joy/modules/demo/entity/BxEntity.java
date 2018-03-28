@@ -23,16 +23,16 @@ public class BxEntity extends ActivitiBaseEntity{
 
     @NotEmpty(message = "办公费不能为空")
     @ActField(name = "办公费",isJudg = true)
-    private int money;
+    private int bgf;
 
     @NotEmpty(message = "材料费不能为空")
     @ActField(name = "材料费",isJudg = true)
-    private int bt;
+    private int clf;
 
     /**
      * 报销原因
      */
-    @NotEmpty(message = "其它不能为空")
+    @NotEmpty(message = "原因不能为空")
     private String baoxiaowhy;
 
     /**
@@ -40,6 +40,8 @@ public class BxEntity extends ActivitiBaseEntity{
      */
     @NotEmpty(message = "发票单据不能为空")
     private byte[] fp;
+    private byte[] fp1;
+    private byte[] fp2;
 
     /**
      * 报销人姓名
@@ -70,13 +72,6 @@ public class BxEntity extends ActivitiBaseEntity{
         this.title = title;
     }
 
-    public int getMoney() {
-        return money;
-    }
-
-    public void setMoney(int money) {
-        this.money = money;
-    }
 
     public String getBaoxiaowhy() {
         return baoxiaowhy;
@@ -94,13 +89,6 @@ public class BxEntity extends ActivitiBaseEntity{
         this.baoxiaoUser = baoxiaoUser;
     }
 
-    public int getBt() {
-        return bt;
-    }
-
-    public void setBt(int bt) {
-        this.bt = bt;
-    }
 
     public byte[] getFp() {
         return fp;
@@ -110,4 +98,35 @@ public class BxEntity extends ActivitiBaseEntity{
         this.fp = fp;
     }
 
+    public int getBgf() {
+        return bgf;
+    }
+
+    public void setBgf(int bgf) {
+        this.bgf = bgf;
+    }
+
+    public int getClf() {
+        return clf;
+    }
+
+    public void setClf(int clf) {
+        this.clf = clf;
+    }
+
+    public byte[] getFp1() {
+        return fp1;
+    }
+
+    public void setFp1(byte[] fp1) {
+        this.fp1 = fp1;
+    }
+
+    public byte[] getFp2() {
+        return fp2;
+    }
+
+    public void setFp2(byte[] fp2) {
+        this.fp2 = fp2;
+    }
 }

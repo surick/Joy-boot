@@ -79,10 +79,14 @@ public class ProbxController {
      */
     @RequestMapping(value = "edit",method = RequestMethod.POST)
     @RequiresPermissions("act:model:all")
-    public String edit(MultipartFile fp, BxEntity bxEntity, BindingResult bindingResult)
+    public String edit(MultipartFile fp,MultipartFile fp1,MultipartFile fp2,BxEntity bxEntity, BindingResult bindingResult)
             throws Exception{
         byte[] fpbytes = fp.getBytes();
+        byte[] fpbytes1 = fp1.getBytes();
+        byte[] fpbytes2 = fp2.getBytes();
         bxEntity.setFp(fpbytes);
+        bxEntity.setFp1(fpbytes1);
+        bxEntity.setFp2(fpbytes2);
         if(StringUtils.isEmpty(bxEntity.getId())){
             probxService.save(bxEntity);
         }else {

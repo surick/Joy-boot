@@ -28,7 +28,7 @@
                 <label class="col-xs-3 control-label no-padding-right"><i class="red"> * </i>办公费:</label>
                 <div class="col-xs-9">
 							<span class="col-xs-11 block input-icon input-icon-right">
-								<input id="money" name="money" type="text" class="form-control" value="${bx.money}"/>
+								<input id="bgf" name="bgf" type="text" class="form-control" value="${bx.bgf}"/>
 							</span>
                 </div>
             </div>
@@ -38,14 +38,14 @@
                 <label class="col-xs-3 control-label no-padding-right"><i class="red"> * </i>材料费:</label>
                 <div class="col-xs-9">
 							<span class="col-xs-11 block input-icon input-icon-right">
-								<input id="bt" name="bt" type="text" class="form-control" value="${bx.bt}"/>
+								<input id="clf" name="clf" type="text" class="form-control" value="${bx.clf}"/>
 							</span>
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="form-group col-xs-12">
-                <label class="col-xs-3 control-label no-padding-right">其它:</label>
+                <label class="col-xs-3 control-label no-padding-right">其它说明:</label>
                 <div class="col-xs-9">
 							<span class="col-xs-11 block input-icon input-icon-right">
 								<textarea id="baoxiaowhy" name="baoxiaowhy" class="form-control" rows="3" placeholder="格式:待定">${bx.baoxiaowhy}</textarea>
@@ -59,6 +59,12 @@
                 <div class="col-xs-9">
 							<span class="col-xs-11 block input-icon input-icon-right">
 								<input id="fp" name="fp" type="file" value="${bx.fp}"/>
+							</span>
+                            <span class="col-xs-11 block input-icon input-icon-right">
+								<input id="fp1" name="fp1" type="file" value="${bx.fp1}"/>
+							</span>
+                            <span class="col-xs-11 block input-icon input-icon-right">
+								<input id="fp2" name="fp2" type="file" value="${bx.fp2}"/>
 							</span>
                 </div>
             </div>

@@ -24,7 +24,7 @@
             <label class="col-sm-3 control-label no-padding-right">办公费:</label>
             <div class="col-sm-9">
             <span class="col-xs-11 block input-icon input-icon-right">
-                <input id="money" name="money" type="text"  class="form-control" value="${bx.money}" readonly/>
+                <input id="bgf" name="bgf" type="text"  class="form-control" value="${bx.bgf}" readonly/>
             </span>
             </div>
         </div>
@@ -32,14 +32,14 @@
             <label class="col-sm-3 control-label no-padding-right">材料费:</label>
             <div class="col-sm-9">
             <span class="col-xs-11 block input-icon input-icon-right">
-                <input id="bt" name="bt" type="text"  class="form-control" value="${bx.bt}" readonly/>
+                <input id="clf" name="clf" type="text"  class="form-control" value="${bx.clf}" readonly/>
             </span>
             </div>
         </div>
     </div>
     <div class="row">
         <div class="form-group col-sm-6 col-md-5 ">
-            <label class="col-sm-3 control-label no-padding-right">其它:</label>
+            <label class="col-sm-3 control-label no-padding-right">其它说明:</label>
             <div class="col-sm-9">
             <span class="col-xs-11 block input-icon input-icon-right">
                 <textarea id="baoxiaowhy" name="baoxiaowhy" class="form-control" readonly>${bx.baoxiaowhy}</textarea>

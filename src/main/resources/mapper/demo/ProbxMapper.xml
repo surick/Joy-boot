@@ -8,9 +8,11 @@
         <result property="id" column="id"/>
         <result property="userId" column="user_id"/>
         <result property="title" column="title"/>
-        <result property="money" column="money"/>
-        <result property="bt" column="bt"/>
+        <result property="bgf" column="bgf"/>
+        <result property="clf" column="clf"/>
         <result property="fp" column="fp"/>
+        <result property="fp1" column="fp1"/>
+        <result property="fp2" column="fp2"/>
         <result property="baoxiaowhy" column="baoxiaowhy"/>
         <result property="status" column="status"/>
         <result property="startTime" column="start_time"/>
@@ -30,9 +32,11 @@
         id,
         user_id,
         title,
-        money,
-        bt,
+        bgf,
+        clf,
         fp,
+        fp1,
+        fp2,
         status,
         start_time,
         instance_id,
@@ -84,9 +88,11 @@
         #{id},
         #{userId},
         #{title},
-        #{money},
-        #{bt},
+        #{bgf},
+        #{clf},
         #{fp},
+        #{fp1},
+        #{fp2},
         #{status},
         #{startTime},
         #{instanceId},
@@ -108,9 +114,11 @@
         <set>
             <if test="userId != null">`user_id` = #{userId}, </if>
             <if test="title != null">`title` = #{title}, </if>
-            <if test="money != null">`money` = #{money}, </if>
-            <if test="bt != null">`bt` = #{bt}, </if>
+            <if test="money != null">`bgf` = #{bgf}, </if>
+            <if test="bt != null">`clf` = #{clf}, </if>
             <if test="fp != null">`fp` = #{fp}, </if>
+            <if test="fp != null">`fp1` = #{fp1}, </if>
+            <if test="fp != null">`fp2` = #{fp2}, </if>
             <if test="status != null">`status` = #{status},</if>
             <if test="startTime != null">`start_time` = #{startTime},</if>
             <if test="instanceId != null">`instance_id` = #{instanceId},</if>

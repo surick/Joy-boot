@@ -48,8 +48,8 @@
                         <td>${i.index+1 }</td>
                         <td>${bx.title}</td>
                         <td>${bx.baoxiaoUser}</td>
-                        <td>${bx.money}</td>
-                        <td>${bx.bt}</td>
+                        <td>${bx.bgf}</td>
+                        <td>${bx.clf}</td>
                         <td>${bx.baoxiaowhy}</td>
                         <td>${fns:getCodeName("act_result",bx.actResult)}</td>
                         <td>${fns:getCodeName("act_process_status",bx.status)}</td>
