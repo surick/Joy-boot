@@ -6,6 +6,8 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/sql" prefix="sql"%>
 <%
     String code = request.getParameter("fp");
+    int id = Integer.parseInt(request.getParameter("id"));
+    //out.print(id);
     Connection conn = null;
     Statement st = null;
     ResultSet rs = null;
@@ -30,9 +32,15 @@
         response.addHeader("Cache-Control", "no-cache");//浏览器和缓存服务器都不应该缓存页面信息
         response.addHeader("Cache-Control", "no-store");//请求和响应的信息都不应该被存储在对方的磁盘系统中；
         response.addHeader("Cache-Control", "must-revalidate");
-        response.getOutputStream().write(bs);
-        response.getOutputStream().write(bs1);
-        response.getOutputStream().write(bs2);
+        if (id == 0) {
+            response.getOutputStream().write(bs);
+        }
+        if (id == 1) {
+            response.getOutputStream().write(bs1);
+        }
+        if (id == 2) {
+            response.getOutputStream().write(bs2);
+        }
         out.clear();
     }catch (Exception e){
         System.out.println(e);

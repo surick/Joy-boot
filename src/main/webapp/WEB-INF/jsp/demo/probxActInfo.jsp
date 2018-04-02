@@ -51,10 +51,12 @@
             <div class="col-sm-9">
             <span class="col-xs-11 block input-icon input-icon-right">
                 <%--<input id="fp" name="fp" type="text"  class="form-control" value="${bx.fp}" readonly/>--%>
-                <a href="#" onclick="showFp()">查看</a>
+                <a href="#" onclick="showFp(0)">查看</a>
+                    <a href="#" onclick="showFp(1)">查看</a>
+                    <a href="#" onclick="showFp(2)">查看</a>
                 <script>
-                    function showFp() {
-                        var url="${webRoot}/demo/probx/showfp?fp=${bx.code}";
+                    function showFp(a) {
+                        var url="${webRoot}/demo/probx/showfp?fp=${bx.code}&id="+a;
                         //弹框层
                         layer.open({
                             scrollbar: false,
