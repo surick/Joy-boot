@@ -12,20 +12,22 @@
 <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
 <script src="https://cdn.bootcss.com/html5shiv/r29/html5.min.js"></script>
 <script src="${webRoot}/js/typeahead-bs2.min.js"></script><%--自动完成 AutoComplete--%>
-<script type="text/javascript" src="${webRoot}/js/chosen.jquery.min.js"></script> <%--标签进行级联--%>
-<script type="text/javascript" src="${webRoot}/js/select2.min.js"></script> <%--下框插件--%>
-<script type="text/javascript" src="${webRoot}/plugins/layer/layer.js"></script>
+<%--<script type="text/javascript" src="${webRoot}/js/chosen.jquery.min.js"></script>--%> <%--标签进行级联--%>
+<script src="https://cdn.bootcss.com/chosen/1.8.3/chosen.jquery.min.js"></script>
+<%--<script type="text/javascript" src="${webRoot}/js/select2.min.js"></script> --%><%--下框插件--%>
+<script src="https://cdn.bootcss.com/select2/4.0.6-rc.1/js/select2.min.js"></script>
+<%--<script type="text/javascript" src="${webRoot}/plugins/layer/layer.js"></script>--%>
+<script src="https://cdn.bootcss.com/layer/3.0.3/layer.min.js"></script>
 <script type="text/javascript" src="${webRoot}/plugins/layui/layui.js"></script>
 <script type="text/javascript" src="${webRoot}/plugins/layui/lay/modules/form.js"></script>
 <script type="text/javascript" src="${webRoot}/plugins/layui/lay/modules/element.js"></script>
 <script type="text/javascript" src="${webRoot}/plugins/layer/mylayer.js"></script>
-<script type="text/javascript" src="${webRoot}/js/bootstrap.min.js"></script>
+<%--<script type="text/javascript" src="${webRoot}/js/bootstrap.min.js"></script>--%>
+<script src="https://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="${webRoot}/plugins/validator/js/bootstrapValidator.js"></script> <%--前端验证bootstrapValidator--%>
 <script type="text/javascript" src="${webRoot}/plugins/ztree/jquery.ztree.all.min.js"></script><%--ztree树结构--%>
 <script type="text/javascript" src="${webRoot}/plugins/validform/js/Validform_v5.3.2.js"></script> <%--前端表单验证validform--%>
 <script>
-
-
     //JS动态设置select 后 触发 onchange事件
     //Chrome , Firfox 不支持fireEvent的方法
     //可以使用dispatchEvent的方法替代

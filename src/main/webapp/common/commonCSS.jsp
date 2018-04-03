@@ -1,7 +1,9 @@
 <link rel="icon" href="https://dev-1253372767.file.myqcloud.com/favicon.ico" type="image/x-icon" />
 <link rel="shortcut icon" href="https://dev-1253372767.file.myqcloud.com/favicon.ico" />
-<link href="${webRoot}/css/bootstrap.min.css" rel="stylesheet"/>
-<link rel="stylesheet" href="${webRoot}/css/font-awesome.min.css"/>
+<%--<link href="${webRoot}/css/bootstrap.min.css" rel="stylesheet"/>
+<link rel="stylesheet" href="${webRoot}/css/font-awesome.min.css"/>--%>
+<link href="https://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 <link rel="stylesheet" href="${webRoot}/css/chosen.css" />
 <link rel="stylesheet" href="${webRoot}/plugins/validator/css/bootstrapValidator.css"/>
 <link rel="stylesheet" href="${webRoot}/plugins/ztree/css/zTreeStyle/zTreeStyle.css"/>
