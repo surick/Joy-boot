@@ -23,11 +23,11 @@
         //改成PDF类型 application/pdf;charset=UTF-8
         //response.setContentType("application/pdf;charset=UTF-8");
         response.setContentType("image/jpeg");
-        response.setHeader("Pragma", "no-cache");
-        response.setDateHeader("Expires", 0);
-        response.addHeader("Cache-Control", "no-cache");//浏览器和缓存服务器都不应该缓存页面信息
-        response.addHeader("Cache-Control", "no-store");//请求和响应的信息都不应该被存储在对方的磁盘系统中；
-        response.addHeader("Cache-Control", "must-revalidate");
+        //response.setHeader("Pragma", "no-cache");
+        //response.setDateHeader("Expires", 0);
+        //response.addHeader("Cache-Control", "no-cache");//浏览器和缓存服务器都不应该缓存页面信息
+        //response.addHeader("Cache-Control", "no-store");//请求和响应的信息都不应该被存储在对方的磁盘系统中；
+        //response.addHeader("Cache-Control", "must-revalidate");
         response.getOutputStream().write(bs);
         out.clear();
     }catch (Exception e){
