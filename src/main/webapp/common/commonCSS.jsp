@@ -4,10 +4,10 @@
 <link rel="stylesheet" href="${webRoot}/css/font-awesome.min.css"/>--%>
 <link href="https://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
 <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-<link rel="stylesheet" href="${webRoot}/css/chosen.css" />
-<link rel="stylesheet" href="${webRoot}/plugins/validator/css/bootstrapValidator.css"/>
-<link rel="stylesheet" href="${webRoot}/plugins/ztree/css/zTreeStyle/zTreeStyle.css"/>
-<link rel="stylesheet" href="${webRoot}/plugins/validform/css/style.css"/>
+<link rel="stylesheet" href="https://dev-1253372767.file.myqcloud.com/joy/css/chosen.css" />
+<link rel="stylesheet" href="https://dev-1253372767.file.myqcloud.com/joy/plugins/validator/css/bootstrapValidator.css"/>
+<link rel="stylesheet" href="https://dev-1253372767.file.myqcloud.com/joy/plugins/ztree/css/zTreeStyle/zTreeStyle.css"/>
+<link rel="stylesheet" href="https://dev-1253372767.file.myqcloud.com/joy/plugins/validform/css/style.css"/>
 <link rel="stylesheet" href="${webRoot}/plugins/layui/css/layui.css"/>
 <style>
     /**透明样式，用作设置某元素禁止操作*/

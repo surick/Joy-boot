@@ -15,7 +15,7 @@
         <button class="layui-btn" type="button" onclick="clickSubmit()">办理</button>
         <button class="layui-btn layui-btn-danger" type="button" onclick="backStartUser()">驳回到发起人</button>
         <button class="layui-btn layui-btn-danger" type="button" onclick="refuse()">拒绝</button>
-        <button class="layui-btn layui-btn-warm" type="button" onclick="turnToDo()">转办</button>
+        <%--<button class="layui-btn layui-btn-warm" type="button" onclick="turnToDo()">转办</button>--%>
       <%--  <button class="layui-btn layui-btn-danger" type="button" onclick="backPrevious()">跳转</button>--%>
         <button class="layui-btn layui-btn-primary" type="button" onclick="closeThisWindow()">关 闭</button>
     </div>
