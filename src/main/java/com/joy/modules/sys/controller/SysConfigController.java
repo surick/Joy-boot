@@ -16,9 +16,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- *
  * 系统配置信息
- *
  */
 @RestController
 @RequestMapping("/sys/config")

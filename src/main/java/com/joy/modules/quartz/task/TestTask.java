@@ -20,7 +20,7 @@ public class TestTask {
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
-		System.out.println("执行成功hxy");
+		System.out.println("执行成功!");
 
 	}
 	

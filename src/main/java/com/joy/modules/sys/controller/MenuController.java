@@ -18,7 +18,6 @@ import java.util.List;
 
 /**
  * 菜单表
- *
  */
 @RestController
 @RequestMapping("/sys/menu")

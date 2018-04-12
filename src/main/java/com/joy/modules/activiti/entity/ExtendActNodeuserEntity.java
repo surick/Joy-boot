@@ -1,15 +1,11 @@
 package com.joy.modules.activiti.entity;
 
 import java.io.Serializable;
-
-
 /**
  * 节点可选人
  */
 public class ExtendActNodeuserEntity implements Serializable {
 	private static final long serialVersionUID = 1L;
-	
-	//
 	private String id;
 	//节点id
 	private String nodeId;
@@ -19,13 +15,10 @@ public class ExtendActNodeuserEntity implements Serializable {
 	 * 审批名字
 	 */
 	private String userTitle;
-
 	/**
 	 * 审批类型名称
 	 */
 	private String typeName;
-
-
 	/**
 	 * 设置：
 	 */

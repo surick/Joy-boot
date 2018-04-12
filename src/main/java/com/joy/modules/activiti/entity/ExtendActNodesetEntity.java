@@ -2,8 +2,6 @@ package com.joy.modules.activiti.entity;
 
 import java.io.Serializable;
 import java.util.List;
-
-
 /**
  * 流程节点配置
  */

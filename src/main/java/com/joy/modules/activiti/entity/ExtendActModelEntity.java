@@ -4,8 +4,6 @@ import com.joy.modules.common.entity.ActivitiBaseEntity;
 import org.hibernate.validator.constraints.NotBlank;
 
 import java.io.Serializable;
-
-
 /**
  * 流程模板扩展表
  */

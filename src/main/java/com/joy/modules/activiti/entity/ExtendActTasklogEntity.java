@@ -2,14 +2,11 @@ package com.joy.modules.activiti.entity;
 
 import java.io.Serializable;
 import java.util.Date;
-
 /**
  * 流程日志扩展类
  */
 public class ExtendActTasklogEntity implements Serializable {
 	private static final long serialVersionUID = 1L;
-	
-	//
 	private String id;
 	//业务id
 	private String busId;

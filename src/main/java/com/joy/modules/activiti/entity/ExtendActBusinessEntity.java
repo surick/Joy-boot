@@ -6,8 +6,6 @@ import org.hibernate.validator.constraints.NotBlank;
 import java.io.Serializable;
 import java.util.List;
 import java.util.Map;
-
-
 /**
  * 业务流程  对应的 业务表
  */

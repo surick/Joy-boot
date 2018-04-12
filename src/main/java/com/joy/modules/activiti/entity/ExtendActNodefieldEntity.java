@@ -1,8 +1,6 @@
 package com.joy.modules.activiti.entity;
 
 import java.io.Serializable;
-
-
 /**
  * 流程节点对应的字段条件
  */

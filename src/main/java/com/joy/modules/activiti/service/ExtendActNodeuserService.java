@@ -7,7 +7,6 @@ import java.util.Map;
 
 /**
  * 节点可选人
- *
  */
 public interface ExtendActNodeuserService {
 	

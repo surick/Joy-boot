@@ -3,8 +3,6 @@ package com.joy.modules.activiti.dto;
 /**
  * 类的功能描述.
  * 流程节点dto类
- * @Auther joy
- * @Date 2017/8/8
  */
 public class ProcessNodeDto {
     /**

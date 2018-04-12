@@ -2,8 +2,6 @@ package com.joy.modules.activiti.entity;
 
 import java.io.Serializable;
 import java.util.Date;
-
-
 /**
  * 业务流程关系表与activitiBaseEntity中字段一样
  */
