@@ -114,11 +114,11 @@
         <set>
             <if test="userId != null">`user_id` = #{userId}, </if>
             <if test="title != null">`title` = #{title}, </if>
-            <if test="money != null">`bgf` = #{bgf}, </if>
-            <if test="bt != null">`clf` = #{clf}, </if>
+            <if test="bgf != null">`bgf` = #{bgf}, </if>
+            <if test="clf != null">`clf` = #{clf}, </if>
             <if test="fp != null">`fp` = #{fp}, </if>
-            <if test="fp != null">`fp1` = #{fp1}, </if>
-            <if test="fp != null">`fp2` = #{fp2}, </if>
+            <if test="fp1 != null">`fp1` = #{fp1}, </if>
+            <if test="fpw != null">`fp2` = #{fp2}, </if>
             <if test="status != null">`status` = #{status},</if>
             <if test="startTime != null">`start_time` = #{startTime},</if>
             <if test="instanceId != null">`instance_id` = #{instanceId},</if>

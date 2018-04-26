@@ -11,7 +11,7 @@
     Connection conn = null;
     Statement st = null;
     ResultSet rs = null;
-    String url = "jdbc:mysql://127.0.0.1:3306/joy";
+    String url = "jdbc:mysql://127.0.0.1:3306/joy-test";
     String user = "root";
     String pass = "root";
     String sql = "select fp,fp1,fp2 from bxaply where code=" + code + "";
