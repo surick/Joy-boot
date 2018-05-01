@@ -6,7 +6,7 @@ import com.joy.modules.common.entity.ActivitiBaseEntity;
 import org.hibernate.validator.constraints.NotEmpty;
 
 /**
- * 报销demo
+ * 报销demo 待添加费用汇总字段(sum)
  *
  * @author w24164
  * @create 2018-03-12 16:10

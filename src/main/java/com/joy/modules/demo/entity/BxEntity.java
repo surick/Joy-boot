@@ -6,7 +6,7 @@ import com.joy.modules.common.entity.ActivitiBaseEntity;
 import org.hibernate.validator.constraints.NotEmpty;
 
 /**
- * 项目报销实体类
+ * 项目报销实体类  待添加费用汇总字段(sum)
  *
  * @author w24164
  * @create 2018-03-23 14:57
