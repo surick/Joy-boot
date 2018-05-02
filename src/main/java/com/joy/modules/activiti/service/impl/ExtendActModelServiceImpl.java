@@ -164,6 +164,7 @@ public class ExtendActModelServiceImpl implements ExtendActModelerService {
         actModelEntity.setStatus(Constant.YESNO.YES.getValue());
         actModelEntity.setActVersion(model.getVersion());
         actModelEntity.setId(extModel.getId());
+		actModelEntity.setMaxmoney(extModel.getMaxmoney());
         extendActModelDao.update(actModelEntity);
 	}
 

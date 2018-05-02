@@ -19,8 +19,8 @@ public class ExtendActModelEntity extends ActivitiBaseEntity implements Serializ
 	private String extendActBusinessId;
 	//activiti中的部署表id
 	private String deploymentId;
-	//描述
-	private String description;
+	//项目金额
+	private int maxmoney;
 	//activiti中的模型表id
 	private String modelId;
 	//名称
@@ -84,18 +84,6 @@ public class ExtendActModelEntity extends ActivitiBaseEntity implements Serializ
 		return deploymentId;
 	}
 	/**
-	 * 设置：描述
-	 */
-	public void setDescription(String description) {
-		this.description = description;
-	}
-	/**
-	 * 获取：描述
-	 */
-	public String getDescription() {
-		return description;
-	}
-	/**
 	 * 设置：activiti中的模型表id
 	 */
 	public void setModelId(String modelId) {
@@ -149,4 +137,11 @@ public class ExtendActModelEntity extends ActivitiBaseEntity implements Serializ
 	}
 
 
+	public int getMaxmoney() {
+		return maxmoney;
+	}
+
+	public void setMaxmoney(int maxmoney) {
+		this.maxmoney = maxmoney;
+	}
 }

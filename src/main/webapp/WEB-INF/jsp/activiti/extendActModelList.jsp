@@ -28,8 +28,9 @@
                 <thead>
                 <tr>
                     <th>序号</th>
-                    <th>名称</th>
+                    <th>项目号</th>
                     <th>业务</th>
+                    <th>项目经费</th>
                     <th>是否部署</th>
                    <%-- <th>机构</th>
                     <th>部门</th>--%>
@@ -43,6 +44,7 @@
                         <td>${i.index+1 }</td>
                         <td>${model.name}</td>
                         <td>${model.businessName}</td>
+                        <td>${model.maxmoney}</td>
                         <td>${fns:getCodeName("YES_NO",model.status)}</td>
                         <%--<td>${model.bapName}</td>
                         <td>${model.baName}</td>--%>

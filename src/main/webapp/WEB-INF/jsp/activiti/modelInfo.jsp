@@ -34,9 +34,9 @@
 							</div>
 						</div>
 						<div class="layui-form-item layui-form-text col-xs-12">
-							<label class="layui-form-label col-xs-3">描述:</label>
+							<label class="layui-form-label col-xs-3"><i class="red"> * </i>项目经费:</label>
 							<div class="col-xs-9">
-								<textarea name="description" placeholder="请输入内容" class="layui-textarea">${model.description}</textarea>
+								<input name="maxmoney" placeholder="请输入经费" type="text" class="form-control" value="${model.maxmoney}"/>
 							</div>
 						</div>
 						<div class="layui-form-item" style="margin-top: 40px">
