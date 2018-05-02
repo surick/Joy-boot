@@ -9,7 +9,7 @@
         <result property="actVersion" column="act_version"/>
         <result property="extendActBusinessId" column="extend_act_business_id"/>
         <result property="deploymentId" column="deployment_id"/>
-        <result property="description" column="description"/>
+        <result property="maxmoney" column="maxmoney"/>
         <result property="modelId" column="model_id"/>
         <result property="name" column="name"/>
         <result property="status" column="status"/>
@@ -30,7 +30,7 @@
 		act_version, 
 		extend_act_business_id, 
 		deployment_id, 
-		description, 
+		maxmoney,
 		model_id, 
 		name, 
 		status, 
@@ -56,7 +56,7 @@
 	<!--根据模型id获取流程模型和业务相关信息-->
 	<select id="getModelAndBusInfo" resultType="com.joy.modules.activiti.entity.ExtendActModelEntity" resultMap="extendActModelMap">
 		select
-			m.id,m.name,m.remark,b.act_key AS actKey
+			m.id,m.name,m.remark,m.maxmoney,b.act_key AS actKey
 		from extend_act_model m,extend_act_business b
 		where m.model_id = #{value} AND m.extend_act_business_id = b.id
 	</select>
@@ -83,7 +83,7 @@
 			`act_version`, 
 			`extend_act_business_id`, 
 			`deployment_id`, 
-			`description`, 
+			`maxmoney`,
 			`model_id`, 
 			`name`, 
 			`status`, 
@@ -104,7 +104,7 @@
 			#{actVersion}, 
 			#{extendActBusinessId}, 
 			#{deploymentId}, 
-			#{description}, 
+			#{maxmoney},
 			#{modelId}, 
 			#{name}, 
 			#{status}, 
@@ -127,7 +127,7 @@
 			<if test="actVersion != null">`act_version` = #{actVersion}, </if>
 			<if test="extendActBusinessId != null">`extend_act_business_id` = #{extendActBusinessId}, </if>
 			<if test="deploymentId != null">`deployment_id` = #{deploymentId}, </if>
-			<if test="description != null">`description` = #{description}, </if>
+			<if test="maxmoney != null">`maxmoney` = #{maxmoney}, </if>
 			<if test="modelId != null">`model_id` = #{modelId}, </if>
 			<if test="name != null">`name` = #{name}, </if>
 			<if test="status != null">`status` = #{status}, </if>
