@@ -29,6 +29,8 @@ public class BxEntity extends ActivitiBaseEntity{
     @ActField(name = "材料费",isJudg = true)
     private int clf;
 
+    private int bx_sum;
+
     /**
      * 报销原因
      */
@@ -128,5 +130,13 @@ public class BxEntity extends ActivitiBaseEntity{
 
     public void setFp2(byte[] fp2) {
         this.fp2 = fp2;
+    }
+
+    public int getBx_sum() {
+        return bx_sum;
+    }
+
+    public void setBx_sum(int bx_sum) {
+        this.bx_sum = bx_sum;
     }
 }

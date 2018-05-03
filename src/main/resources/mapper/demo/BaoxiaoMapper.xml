@@ -24,6 +24,7 @@
         <result property="updateTime" column="update_time"/>
         <result property="remark" column="remark"/>
         <result property="actResult" column="act_result"/>
+        <result property="sum" column="sum"/>
     </resultMap>
 
     <sql id="Base_Column_List" >
@@ -45,13 +46,14 @@
         update_id,
         remark,
         act_result,
-        baoxiaowhy
+        baoxiaowhy,
+        sum
     </sql>
 
     <select id="queryObject" resultType="com.joy.modules.demo.entity.BaoxiaoEntity" resultMap="baoxiaoMap">
         select
         <include refid="Base_Column_List" />
-        from baoxiaoAply
+        from baoxiaoaply
         where id = #{value}
     </select>
 
@@ -67,7 +69,7 @@
     </select>
 
     <select id="queryTotal" resultType="int">
-        select count(*) from baoxiaoAply
+        select count(*) from baoxiaoaply
     </select>
 
    <!-- <select id="getBxfp" resultType="byte">
@@ -75,7 +77,7 @@
     </select>-->
 
     <insert id="save" parameterType="com.joy.modules.demo.entity.BaoxiaoEntity">
-        insert into baoxiaoAply
+        insert into baoxiaoaply
         (
         <include refid="Base_Column_List" />
         )
@@ -99,7 +101,8 @@
         #{updateTime},
         #{remark},
         #{actResult},
-        #{baoxiaowhy}
+        #{baoxiaowhy},
+        #{sum}
         )
     </insert>
 
@@ -128,11 +131,11 @@
     </update>
 
     <delete id="delete">
-        delete from baoxiaoAply where id = #{value}
+        delete from baoxiaoaply where id = #{value}
     </delete>
 
     <delete id="deleteBatch">
-        delete from baoxiaoAply where id in
+        delete from baoxiaoaply where id in
         <foreach item="id" collection="array" open="(" separator="," close=")">
             #{id}
         </foreach>

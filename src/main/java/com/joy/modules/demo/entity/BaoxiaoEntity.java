@@ -29,6 +29,8 @@ public class BaoxiaoEntity extends ActivitiBaseEntity {
     @ActField(name = "补贴",isJudg = true)
     private int bt;
 
+    private int sum;
+
     /**
      * 报销原因
      */
@@ -108,5 +110,13 @@ public class BaoxiaoEntity extends ActivitiBaseEntity {
 
     public void setFp(byte[] fp) {
         this.fp = fp;
+    }
+
+    public int getSum() {
+        return sum;
+    }
+
+    public void setSum(int sum) {
+        this.sum = sum;
     }
 }

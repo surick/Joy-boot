@@ -21,6 +21,8 @@ public class ExtendActModelEntity extends ActivitiBaseEntity implements Serializ
 	private String deploymentId;
 	//项目金额
 	private int maxmoney;
+	//已使用额度
+	private int costmoney;
 	//activiti中的模型表id
 	private String modelId;
 	//名称
@@ -143,5 +145,13 @@ public class ExtendActModelEntity extends ActivitiBaseEntity implements Serializ
 
 	public void setMaxmoney(int maxmoney) {
 		this.maxmoney = maxmoney;
+	}
+
+	public int getCostmoney() {
+		return costmoney;
+	}
+
+	public void setCostmoney(int costmoney) {
+		this.costmoney = costmoney;
 	}
 }

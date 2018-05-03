@@ -22,6 +22,7 @@ import com.joy.modules.common.utils.CodeUtils;
 import com.joy.modules.common.utils.Result;
 import com.joy.modules.common.utils.UserUtils;
 import com.joy.modules.common.utils.Utils;
+import com.joy.modules.demo.service.SumService;
 import com.joy.modules.sys.entity.UserEntity;
 import org.activiti.bpmn.model.*;
 import org.activiti.bpmn.model.Process;
@@ -109,6 +110,9 @@ public class ActModelerServiceImpl implements ActModelerService {
 
     @Autowired
     private NoticeUserDao noticeUserDao;*/  //未改
+
+    @Autowired
+    private SumService sumService;
 
 
     @Override
@@ -682,6 +686,10 @@ public class ActModelerServiceImpl implements ActModelerService {
                 //流程结束可以在这里写一些通知信息
                 ExtendActFlowbusEntity flowBus = flowbusService.queryByBusIdInsId(processTaskDto.getInstanceId(), processTaskDto.getBusId());
                 //sendNoticeMsg(flowBus.getStartUserId(),businessEntity);//未改
+                sumService.sum(flowBus.getDefid(),flowBus.getTableName());
+                //flowBus.getDefid();
+                //flowBus.getTableName();
+
             } else {
               //下一个节点不为结束节点
                 //查询下个节点信息
