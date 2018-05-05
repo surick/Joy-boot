@@ -2,7 +2,9 @@ package com.joy.modules.demo.dao;
 
 import org.apache.ibatis.annotations.Mapper;
 
+import java.util.Map;
+
 @Mapper
 public interface SumDao {
-    void sum(String defid,String tablename);
+    void sum(Map<String, String> map);
 }

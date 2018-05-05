@@ -686,7 +686,13 @@ public class ActModelerServiceImpl implements ActModelerService {
                 //流程结束可以在这里写一些通知信息
                 ExtendActFlowbusEntity flowBus = flowbusService.queryByBusIdInsId(processTaskDto.getInstanceId(), processTaskDto.getBusId());
                 //sendNoticeMsg(flowBus.getStartUserId(),businessEntity);//未改
-                sumService.sum(flowBus.getDefid(),flowBus.getTableName());
+                //SumEntity sumEntity = new SumEntity();
+                //sumEntity.setDefid(flowBus.getDefid());
+                //sumEntity.setTablename(flowBus.getTableName());
+                Map<String,String> map1 = new HashMap<String, String>();
+                map1.put("defid",flowBus.getDefid());
+                map1.put("tablename",flowBus.getTableName());
+                sumService.sum(map1);
                 //flowBus.getDefid();
                 //flowBus.getTableName();
 

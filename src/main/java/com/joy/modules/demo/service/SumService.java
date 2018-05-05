@@ -1,5 +1,7 @@
 package com.joy.modules.demo.service;
 
+import java.util.Map;
+
 public interface SumService {
-    void sum(String defid,String tablename);
+    void sum(Map<String, String> map);
 }

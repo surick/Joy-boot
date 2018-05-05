@@ -5,13 +5,15 @@ import com.joy.modules.demo.service.SumService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Map;
+
 @Service("sumService")
 public class SumServiceImpl implements SumService {
     @Autowired
     private SumDao sumDao;
 
     @Override
-    public void sum(String defid,String tablename) {
-        sumDao.sum(defid, tablename);
+    public void sum(Map<String, String> map) {
+        sumDao.sum(map);
     }
 }

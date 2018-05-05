@@ -3,9 +3,15 @@
 
 <mapper namespace="com.joy.modules.demo.dao.SumDao">
 
-    <update id="sum">
+    <update id="sum" parameterType="Map">
         update extend_act_model
         <set>
+         <!--   <if test="#{tablename} == 'baoxiaoaply'">
+                `costmoney` = (select sum(sum) from baoxiaoaply)
+            </if>
+            <if test="#{tablename} == 'bxaply'">
+                `costmoney` = (select sum(bx_sum) from bxaply)
+            </if>-->
             `costmoney` = (select sum(sum) from baoxiaoaply)
         </set>
         where name = (select name_ from act_re_procdef where id_ = #{defid})
