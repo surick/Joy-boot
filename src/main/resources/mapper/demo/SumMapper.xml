@@ -16,4 +16,12 @@
         </set>
         where name = (select name_ from act_re_procdef where id_ = #{defid})
     </update>
+    <update id="sum_bx" parameterType="Map">
+        update extend_act_model
+        <set>
+            `costmoney` = (select sum(bx_sum) from bxaply),
+            `leftmoney` = ((select maxmoney from extend_act_model where name = (select name_ from act_re_procdef where id_ = #{defid}))-(select costmoney from extend_act_model where name = (select name_ from act_re_procdef where id_ = #{defid})))
+        </set>
+        where name = (select name_ from act_re_procdef where id_ = #{defid})
+    </update>
 </mapper>

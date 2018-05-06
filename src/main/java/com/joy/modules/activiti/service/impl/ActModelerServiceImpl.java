@@ -692,7 +692,13 @@ public class ActModelerServiceImpl implements ActModelerService {
                 Map<String,String> map1 = new HashMap<String, String>();
                 map1.put("defid",flowBus.getDefid());
                 map1.put("tablename",flowBus.getTableName());
-                sumService.sum(map1);
+                if (flowBus.getTableName().equals("baoxiaoaply")) {
+                    sumService.sum(map1);
+                }
+                if (flowBus.getTableName().equals("bxaply")){
+                    sumService.sum_bx(map1);
+                }
+
                 //flowBus.getDefid();
                 //flowBus.getTableName();
 

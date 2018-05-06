@@ -26,6 +26,7 @@
         <result property="updateTime" column="update_time"/>
         <result property="remark" column="remark"/>
         <result property="actResult" column="act_result"/>
+        <result property="bx_sum" column="bx_sum"/>
     </resultMap>
 
     <sql id="Base_Column_List" >
@@ -49,7 +50,8 @@
         update_id,
         remark,
         act_result,
-        baoxiaowhy
+        baoxiaowhy,
+        bx_sum
     </sql>
 
     <select id="queryObject" resultType="com.joy.modules.demo.entity.BxEntity" resultMap="bxMap">
@@ -105,7 +107,8 @@
         #{updateTime},
         #{remark},
         #{actResult},
-        #{baoxiaowhy}
+        #{baoxiaowhy},
+        #{bx_sum}
         )
     </insert>
 

@@ -11,6 +11,7 @@
         <result property="deploymentId" column="deployment_id"/>
         <result property="maxmoney" column="maxmoney"/>
 		<result property="costmoney" column="costmoney"/>
+		<result property="leftmoney" column="leftmoney"/>
         <result property="modelId" column="model_id"/>
         <result property="name" column="name"/>
         <result property="status" column="status"/>
@@ -33,6 +34,7 @@
 		deployment_id, 
 		maxmoney,
 		costmoney,
+		leftmoney,
 		model_id, 
 		name, 
 		status, 
@@ -58,7 +60,7 @@
 	<!--根据模型id获取流程模型和业务相关信息-->
 	<select id="getModelAndBusInfo" resultType="com.joy.modules.activiti.entity.ExtendActModelEntity" resultMap="extendActModelMap">
 		select
-			m.id,m.name,m.remark,m.maxmoney,m.costmoney,b.act_key AS actKey
+			m.id,m.name,m.remark,m.maxmoney,m.costmoney,m.leftmoney,b.act_key AS actKey
 		from extend_act_model m,extend_act_business b
 		where m.model_id = #{value} AND m.extend_act_business_id = b.id
 	</select>

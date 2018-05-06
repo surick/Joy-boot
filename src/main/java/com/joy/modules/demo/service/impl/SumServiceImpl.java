@@ -16,4 +16,9 @@ public class SumServiceImpl implements SumService {
     public void sum(Map<String, String> map) {
         sumDao.sum(map);
     }
+
+    @Override
+    public void sum_bx(Map<String, String> map) {
+        sumDao.sum_bx(map);
+    }
 }

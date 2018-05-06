@@ -64,7 +64,7 @@ public class ProbxServiceImpl implements ProbxService{
         bx.setUserId(UserUtils.getCurrentUserId());
         bx.setBapid(currentUser.getBapid());
         bx.setBaid(currentUser.getBaid());
-
+        bx.setBx_sum(bx.getBgf()+bx.getClf());
         bxDao.save(bx);
     }
 

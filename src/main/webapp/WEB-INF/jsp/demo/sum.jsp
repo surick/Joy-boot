@@ -30,6 +30,7 @@
                     <th>业务</th>
                     <th>项目经费</th>
                     <th>已使用额度</th>
+                    <th>剩余额度</th>
                     <th>是否部署</th>
                     <th>创建时间</th>
                 </tr>
@@ -42,6 +43,7 @@
                         <td>${model.businessName}</td>
                         <td>${model.maxmoney}</td>
                         <td>${model.costmoney}</td>
+                        <td>${model.leftmoney}</td>
                         <td>${fns:getCodeName("YES_NO",model.status)}</td>
                         <td><fmt:formatDate value="${model.createTime}" pattern="yyyy-MM-dd"/></td>
                     </tr>
