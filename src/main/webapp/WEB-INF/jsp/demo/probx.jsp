@@ -14,7 +14,7 @@
         <div class="col-md-12">
             <form class="layui-form" id="search-from" action="${webRoot}/demo/probx/list">
                 <div class="layui-form-item">
-                    <label class="layui-form-label" style="width:10%;">项目事由:</label>
+                    <label class="layui-form-label" style="width:10%;">报销人:</label>
                     <div class="layui-input-inline">
                         <input type="text" name="title" value="${baoxiao.title}" class="layui-input" >
                     </div>

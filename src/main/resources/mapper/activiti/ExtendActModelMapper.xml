@@ -71,8 +71,8 @@
 		(SELECT name FROM sys_organ o WHERE o.id=auth.bapid) AS bapName,(SELECT name FROM sys_organ o WHERE o.id=auth.baid) AS baName
 		from extend_act_model auth
 		WHERE 1=1
-			/*数据权限sql*/
-			<include refid="com.joy.base.dao.DataAuth"/>
+			/*TODO:数据权限sql*/
+			<!--<include refid="com.joy.base.dao.DataAuth"/>-->
 			<if test="name != null and name != ''">
 				and name like concat('%',#{name},'%')
 			</if>
