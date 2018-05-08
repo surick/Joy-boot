@@ -88,8 +88,9 @@
 
 	<!--我的待办列表-->
 	<select id="findMyUpcomingPage" resultType="com.joy.modules.activiti.dto.ProcessTaskDto">
-		select  a.name_ AS taskName,a.CREATE_TIME_ AS createTime, a.id_ AS taskId,  a.proc_inst_id_ AS instanceId,fb.defid AS defId,
+		select  a.name_ AS taskName,a.CREATE_TIME_ AS createTime, a.id_ AS taskId,  a.proc_inst_id_ AS instanceId,
 			fb.code,fb.act_key AS actKey,fb.bus_id AS busId,
+			(select name_ from act_re_procdef where id_ = fb.defid) AS defId,
 			(SELECT name FROM extend_act_business ab WHERE fb.act_key=ab.act_key ) AS busName,
 			(SELECT user_name FROM sys_user u WHERE u.id =fb.start_user_Id)AS startUserName,
 			(SELECT user_name FROM sys_user u WHERE u.id =a.ASSIGNEE_ ) AS dealName,

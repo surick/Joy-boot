@@ -30,6 +30,7 @@
                     <th>序号</th>
                     <th>任务名称</th>
                     <th>业务编号</th>
+                    <th>项目号</th>
                     <th>业务名称</th>
                     <th>流程发起人</th>
                     <th>任务创建时间</th>
@@ -43,6 +44,7 @@
                         <td>${i.index+1 }</td>
                         <td>${task.taskName}</td>
                         <td>${task.code}</td>
+                        <td>${task.defId}</td>
                         <td>${task.busName}</td>
                         <td>${task.startUserName}</td>
                         <td><fmt:formatDate value="${task.createTime}" pattern="yyyy-MM-dd HH:mm"/></td>
