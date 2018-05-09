@@ -44,7 +44,7 @@
                         <td>${i.index+1 }</td>
                         <td>${task.taskName}</td>
                         <td>${task.code}</td>
-                        <td>${task.defId}</td>
+                        <td>${task.xmh}</td>
                         <td>${task.busName}</td>
                         <td>${task.startUserName}</td>
                         <td><fmt:formatDate value="${task.createTime}" pattern="yyyy-MM-dd HH:mm"/></td>

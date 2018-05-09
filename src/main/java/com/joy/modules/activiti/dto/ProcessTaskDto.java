@@ -111,6 +111,8 @@ public class ProcessTaskDto {
 	 */
 	private String varValue;
 
+	private String xmh;
+
 
 	public String getDefId() {
 		return defId;
@@ -294,5 +296,13 @@ public class ProcessTaskDto {
 
 	public void setStatus(String status) {
 		this.status = status;
+	}
+
+	public String getXmh() {
+		return xmh;
+	}
+
+	public void setXmh(String xmh) {
+		this.xmh = xmh;
 	}
 }
