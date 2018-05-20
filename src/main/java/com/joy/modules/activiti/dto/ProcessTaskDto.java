@@ -113,6 +113,25 @@ public class ProcessTaskDto {
 
 	private String xmh;
 
+	private String reason;
+
+	private int cost;
+
+	public int getCost() {
+		return cost;
+	}
+
+	public void setCost(int cost) {
+		this.cost = cost;
+	}
+
+	public String getReason() {
+		return reason;
+	}
+
+	public void setReason(String reason) {
+		this.reason = reason;
+	}
 
 	public String getDefId() {
 		return defId;
