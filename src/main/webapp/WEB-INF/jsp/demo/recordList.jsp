@@ -28,9 +28,11 @@
                         <th>详情</th>
                     </tr>
                     </thead>
+                </table>
+                <table id="table" class="layui-table">
                     <tbody>
                     <c:forEach items="${page.result}" var="task" varStatus="i">
-                        <tr name="task_${task.taskId }">
+                        <tr name="task_${task.taskId }" id="change">
                             <td>${i.index+1 }</td>
                             <td>${task.xmh}</td>
                             <td>${task.taskName}</td>
@@ -72,6 +74,18 @@
         });
     }
 
+    window.onload=function() {
+                        var tbl = document.getElementById("table"); // 先获取table
+                        var rows = tbl.getElementsByTagName("tr"); // 获取里面的行tr
+                        for(i=0;i<rows.length;i++) {  // 遍历里面的行
+                                   var j = parseInt(i/3); // 以每3行为单位,j为：3次0，3次1，3次2 ...
+                                   if(j%2==0){ // 再通过取模来设置每隔3行显示不同的两种颜色
+                                         rows[i].style.backgroundColor="#f00";
+                                       }else{
+                                         rows[i].style.backgroundColor="#0f0";
+                                       }
+                            }
+                 };
 
 </script>
 
