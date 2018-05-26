@@ -80,9 +80,9 @@
                         for(i=0;i<rows.length;i++) {  // 遍历里面的行
                                    var j = parseInt(i/3); // 以每3行为单位,j为：3次0，3次1，3次2 ...
                                    if(j%2==0){ // 再通过取模来设置每隔3行显示不同的两种颜色
-                                         rows[i].style.backgroundColor="#f00";
+                                         rows[i].style.backgroundColor="#fff";
                                        }else{
-                                         rows[i].style.backgroundColor="#0f0";
+                                         rows[i].style.backgroundColor="#eeeeee";
                                        }
                             }
                  };
