@@ -1,2 +1,1 @@
-## Joy-boot
 ``repository``
