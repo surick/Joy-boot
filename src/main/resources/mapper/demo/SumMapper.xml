@@ -25,4 +25,27 @@
         </set>
         where name = (select name_ from act_re_procdef where id_ = #{defid})
     </update>
+
+    <select id="findRecordList" resultType="com.joy.modules.activiti.dto.ProcessTaskDto">
+        select  a.create_time,a.deal_time,a.bus_id AS busId,a.def_id AS defId,a.instance_id AS instanceId,a.task_id AS taskId,
+        a.task_name AS taskName,a.app_opinion AS remark,fb.code,fb.status AS status,fb.act_key,
+        (select name_ from act_re_procdef where id_ = fb.defid) AS xmh,
+        (SELECT name FROM extend_act_business ab WHERE fb.act_key=ab.act_key ) AS busName,
+        (SELECT user_name FROM sys_user u WHERE u.id =fb.start_user_Id)AS startUserName,
+        (SELECT user_name FROM sys_user u WHERE u.id =a.deal_id ) AS dealName,
+        (SELECT user_name FROM sys_user u WHERE u.id =a.advance_id ) AS advanceName,
+        (SELECT node_type FROM extend_act_nodeset ns WHERE ns.defid=fb.defid) AS nodeType
+        FROM extend_act_flowbus fb,extend_act_tasklog a
+        WHERE a.instance_id= fb.instance_id
+        <if test="dealId != null and dealId != '' ">
+            AND a.deal_id = #{dealId}
+        </if>
+        <if test="modelName != null and modelName != '' ">
+            AND (select name_ from act_re_procdef where id_ = fb.defid) = #{modelName}
+        </if>
+        <if test="busId != null and busId != '' ">
+            AND fb.bus_id = #{busId}
+        </if>
+        ORDER BY a.deal_time DESC
+    </select>
 </mapper>

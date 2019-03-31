@@ -50,7 +50,6 @@ public class ProbxController {
     }
 
     @RequestMapping("showfp")
-    @RequiresPermissions("act:model:all")
     public String showFp(@RequestParam(value = "fp",required = false) String fp, @RequestParam(value = "id",required = false) String id,HttpServletResponse response){
         return "demo/probxfp";
     }

@@ -46,7 +46,6 @@ public class BaoxiaoController {
     }
 
     @RequestMapping("showfp")
-    @RequiresPermissions("act:model:all")
     public String showFp(@RequestParam(value = "fp",required = false) String fp, HttpServletResponse response){
         return "demo/bxfp";
        /* try {

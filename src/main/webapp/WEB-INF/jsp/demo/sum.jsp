@@ -33,6 +33,7 @@
                     <th>剩余额度</th>
                     <th>是否部署</th>
                     <th>创建时间</th>
+                    <th>使用记录</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -46,6 +47,7 @@
                         <td>${model.leftmoney}</td>
                         <td>${fns:getCodeName("YES_NO",model.status)}</td>
                         <td><fmt:formatDate value="${model.createTime}" pattern="yyyy-MM-dd"/></td>
+                        <td><button class="layui-btn layui-btn-small layui-btn-normal" type="button" onclick="showMore('${model.name}')">使用记录</button></td>
                     </tr>
                 </c:forEach>
                 </tbody>
@@ -55,4 +57,17 @@
     </div>
 </div>
 </body>
+<script>
+    function showMore(modelName) {
+        var url="${webRoot}/demo/sum/record?modelName="+modelName;
+        //弹框层
+        layer.open({
+            type: 2,
+            area: ['100%', '100%'], //宽高
+            content: [url,'yes'],
+            title:['查看记录',true],
+            shadeClose: true, //开启遮罩关闭
+        });
+    }
+</script>
 </html>

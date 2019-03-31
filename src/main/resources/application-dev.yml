@@ -5,7 +5,7 @@ spring:
         druid:
             url: jdbc:mysql://localhost:3306/joy-test?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8
             username: root
-            password: root
+            password: Ljgzmy@970201
             initial-size: 10
             max-active: 100
             min-idle: 10
